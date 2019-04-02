@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка - каталог товаров</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" alt="Изображение логотипа сайта">
+      </a>
+      <nav class="main-nav page-header__nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="search menu-list__item">
+              <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+                <label class="form-search__label" for="search__input">
+                  Поиск по сайту
+                  <input class="form-search__input" type="text" id="search__input" name="search__input">
+                </label>
+              </form>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__basket" href="shopping-cart.html">Корзина:
+                <span class="basket__quantity">пока пуста</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__current-page breadcrumb">
+        <h2 class="breadcrumb__title">Каталог товаров</h2>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item product">
+              <div class="product__container">
+                <div class="product__picture">
+                  <picture>
+                    <source srset="https://via.placeholder.com/260x195" type="img/webp">
+                    <img class="product__image" src="https://via.placeholder.com/260x195" alt="зайчик попрыгайчик изображение">
+                  </picture>
+                </div>
+                <h3 class="product__title">Зайчик-попрыгайчик</h3>
+                <p class="product__description">Рост 30 см, вес 200 г</p>
+                <p class="product__btns">
+                  <span class="product__price">1 200руб.</span>
+                  <a class="product__basket--link" href="#">
+                    <span class="product__basket--icon"></span>
+                  </a>
+                </p>
+              </div>
+            </li>
+            <li class="catalog__item product">
+              <div class="product__container">
+                <div class="product__picture">
+                  <picture>
+                    <source srset="https://via.placeholder.com/260x195" type="img/webp">
+                    <img class="product__image" src="https://via.placeholder.com/260x195" alt="Корзинка для белья изображение">
+                  </picture>
+                </div>
+                <h3 class="product__title">Корзинка для белья</h3>
+                <p class="product__description">Диаметр 15см, высота 10см</p>
+                <p class="product__btns">
+                  <span class="product__price">690руб.</span>
+                  <a class="product__basket--link" href="#">
+                    <span class="product__basket--icon"></span>
+                  </a>
+                </p>
+              </div>
+            </li>
+            <li class="catalog__item product">
+              <div class="product__container">
+                <div class="product__picture">
+                  <picture>
+                    <source srset="https://via.placeholder.com/260x195" type="img/webp">
+                    <img class="product__image" src="https://via.placeholder.com/260x195" alt="Большая корзинка для игрушек">
+                  </picture>
+                </div>
+                <h3 class="product__title">Большая корзинка для игрушек</h3>
+                <p class="product__description">Диаметр 30 см, высота 30см</p>
+                <p class="product__btns">
+                  <span class="product__price">1 500руб.</span>
+                  <a class="product__basket--link" href="#">
+                    <span class="product__basket--icon"></span>
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="presentations">
+        <div class="presentations__wrapper">
+          <h2 class="visually-hidden">Наши видео</h2>
+          <ul class="presentations__list">
+            <li class="presentations__item">
+              <a class="presentations__heading" href="#">
+                <span class="presentations__icon">иконка камерa</span>
+                <h3 class="presentations__title">Процесс производства</h3>
+              </a>
+              <div class="presentations__video video">
+                <a class="video__link" href="#">
+                  <picture>
+                    <img class="video__image" src="https://via.placeholder.com/260x150" alt="видео процесс производства">
+                  </picture>
+                </a>
+                <button class="video__button" type="button">
+                  Запустить видео
+                  <span class="video__icon"></span>
+                </button>
+              </div>
+              <p class="presentations__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a class="presentations__button order-button button " href="">Сделать заказ</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="https://instagramm.com">Мы в инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com">Мы в фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">Наш микроблог в твитер</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-page__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+   <!-- всплывающее окно будет скрыто по умолчанию  -->
+    <section class="popup popup-order">
+      <div class="popup__wraper">
+        <h3 class="popup-order__title">Добавить в корзину</h3>
+        <p class="popup-order__text">Выберите размер:</p>
+        <div class="popup-order__list order-sizes">
+          <ul class="order-sizes__list">
+            <li class="order-sizes__item">S</li>
+            <li class="order-sizes__item">M</li>
+            <li class="order-sizes__item">L</li>
+          </ul>
+        </div>
+        <button class="popup-order__btn">Добавить</button>
+      </div>
+    </section>
+
+  </body>
+</html>
