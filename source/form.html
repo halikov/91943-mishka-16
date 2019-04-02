@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка - каталог товаров</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" alt="Изображение логотипа сайта">
+      </a>
+      <nav class="main-nav page-header__nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="menu-list__item--active">
+              <a>Вязание на заказ</a>
+            </li>
+            <li class="search menu-list__item">
+              <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+                <label class="form-search__label" for="search__input">
+                  Поиск по сайту
+                  <input class="form-search__input" type="text" id="search__input" name="search__input">
+                </label>
+              </form>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__basket" href="shopping-cart.html">Корзина:
+                <span class="basket__quantity">пока пуста</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__current-page breadcrumb">
+        <h2 class="breadcrumb__title">Вязание на заказ</h2>
+      </div>
+    </header>
+
+    <main class="page-main">
+    <section class="order-form">
+      <div class="order-form__wrapper">
+        <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="order-form__container">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="fieldset fieldset-type">
+              <legend class="legend">Тип</legend>
+              <label class="label" for="decor-type">
+                Аксессуар для интерьера
+                <input class="input input--radio" id="decor-type"  type="radio" name="filter-by-type">
+              </label>
+              <label class="label" for="toy-type">
+                Детская игрушка
+                <input class="input input--radio" id="toy-type"  type="radio" name="filter-by-type">
+              </label>
+            </fieldset>
+            <fieldset class="fieldset fieldset-color">
+              <legend class="legend">Цвет</legend>
+              <label class="label" for="white">
+                Белый
+                <input class="input input--chbx" id="white" type="checkbox" name="color"></input>
+              </label>
+              <label class="label" for="white">
+                Серый
+                <input class="input input--chbx" id="white" type="checkbox" name="color"></input>
+              </label>
+              <label class="label" for="white">
+                «Тиффани»
+                <input class="input input--chbx" id="white" type="checkbox" name="color"></input>
+              </label>
+              <label class="label" for="white">
+                Черный
+                <input class="input input--chbx" id="white" type="checkbox" name="color"></input>
+              </label>
+              <label class="label" for="white">
+                Розовый
+                <input class="input input--chbx" id="white" type="checkbox" name="color"></input>
+              </label>
+              <label class="label" for="white">
+                Оранжевый
+                <input class="input input--chbx" id="white" type="checkbox" name="color"></input>
+              </label>
+            </fieldset>
+            <fieldset class="fieldset fieldset-user">
+              <legend>ФИО</legend>
+              <label class="label label--name" for="user-name">
+                Имя:
+                <input class="input input--name" id="user-name" type="text" placeholder="ВВедите ваше имя*">
+              </label>
+              <label class="label label--surname" for="user-surname">
+                Фамилия:
+                <input class="input input--surname" id="user-surname" type="text" placeholder="Укажите фамилию*">
+              </label>
+              <label class="label label--middle-name" for="user-middle-name">
+                Отчество:
+                <input class="input input--middle-name" id="user-middle-name" type="text" placeholder="Отчество, если желаете">
+              </label>
+            </fieldset>
+            <fieldset class="fieldset fieldset-tel">
+              <legend>Тел</legend>
+              <label class="label label-tel" for="user-tel">
+                <span class="label-tel__icon">иконка телефон</span>
+                <input class="input input-tel" id="user-tel" type="text" placeholder="+7 XXX XXX XX XX*">
+              </label>
+            </fieldset>
+            <fieldset class="fieldset fieldset-email">
+              <legend class="legend legend-email">E-Mail</legend>
+              <label class="label label-email" for="">
+                <span class="label-email__icon">иконка конверт</span>
+                <input class="input input-email" type="text" placeholder="Ваш Email*">
+              </label>
+            </fieldset>
+            <fieldset class="fieldset fieldset-textarea">
+              <legend class="legend legend-textarea">Доп</legend>
+              <label class="label label-textarea" for="add-wishes"></label>
+              <textarea class="textarea"  id="add-wishes" name="add-wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p><sup>&#10035;</sup>Поля обязательны для заполнения</p>
+
+            <button class="filter-form__button button">отправить заказ</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="https://instagramm.com">Мы в инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com">Мы в фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">Наш микроблог в твитер</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-page__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+   <!-- всплывающее окно будет скрыто по умолчанию  -->
+    <section class="popup popup-order">
+      <div class="popup__wraper">
+        <h3 class="popup-order__title">Добавить в корзину</h3>
+        <p class="popup-order__text">Выберите размер:</p>
+        <div class="popup-order__list order-sizes">
+          <ul class="order-sizes__list">
+            <li class="order-sizes__item">S</li>
+            <li class="order-sizes__item">M</li>
+            <li class="order-sizes__item">L</li>
+          </ul>
+        </div>
+        <button class="popup-order__btn">Добавить</button>
+      </div>
+    </section>
+
+  </body>
+</html>
