@@ -50,74 +50,74 @@
         <div class="order-form__container">
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="fieldset fieldset-mod">
-              <legend class="legend">Тип</legend>
+            <fieldset class="field-group">
+              <legend class="field-group__legend">Тип</legend>
 
-              <div class="field-mod">
-                <label class="field-mod__decor" for="decor-type">
-                  <input class="field-mod__input field-mod__input--radio" id="decor-type"  type="radio" name="filter-by-type">
-                  <span class="field-mod__name">Аксессуар для интерьера</span>
+              <div class="field-radio">
+                <label class="field-radio__decor" for="decor-mod">
+                  <input class="field-radio__input" id="decor-mod"  type="radio" name="filter-by-mod" checked>
+                  <span class="field-radio__name">Аксессуар для интерьера</span>
                 </label>
               </div>
 
-              <div class="field-mod">
-                <label class="field-mod__toys" for="toys-type">
-                  <input class="field-mod__input field-mod__input--radio" id="toys-type"  type="radio" name="filter-by-type">
-                  <span class="field-mod__name">Детская игрушка</span>
-                </label>
-              </div>
-
-            </fieldset>
-
-            <fieldset class="fieldset fieldset-colour">
-              <legend class="legend">Цвет</legend>
-
-              <div class="field-colour">
-                <label class="field-colour__label" for="white">
-                  <input class="field-colour__input field-colour__input--chbx" id="white" type="checkbox" name="white">
-                  <span class="field-colour__name">Белый</span>
-                </label>
-              </div>
-
-              <div class="field-colour">
-                <label class="field-colour__label" for="grey">
-                  <input class="field-colour__input field-colour__input--chbx" id="grey" type="checkbox" name="grey">
-                  <span class="field-colour__name">Серый</span>
-                </label>
-              </div>
-
-              <div class="field-colour">
-                <label class="field-colour__label" for="tiffani">
-                  <input class="field-colour__input field-colour__input--chbx" id="tiffani" type="checkbox" name="tiffani">
-                  <span class="field-colour__name">«Тиффани»</span>
-                </label>
-              </div>
-
-              <div class="field-colour">
-                <label class="field-colour__label" for="black">
-                  <input class="field-colour__input field-colour__input--chbx" id="black" type="checkbox" name="black">
-                  <span class="field-colour__name">Черный</span>
-                </label>
-              </div>
-
-              <div class="field-colour">
-                <label class="field-colour__label" for="pink">
-                  <input class="field-colour__input field-colour__input--chbx" id="pink" type="checkbox" name="pink">
-                  <span class="field-colour__name">Розовый</span>
-                </label>
-              </div>
-
-              <div class="field-colour">
-                <label class="field-colour__label" for="orange">
-                  <input class="field-colour__input field-colour__input--chbx" id="orange" type="checkbox" name="orange">
-                  <span class="field-colour__name">Оранжевый</span>
+              <div class="field-radio">
+                <label class="field-radio__toys" for="toys-mod">
+                  <input class="field-radio__input" id="toys-mod"  type="radio" name="filter-by-mod">
+                  <span class="field-radio__name">Детская игрушка</span>
                 </label>
               </div>
 
             </fieldset>
 
-            <fieldset class="fieldset fieldset-user">
-              <legend class="legend">ФИО</legend>
+            <fieldset class="field-group">
+              <legend class="field-group__title">Цвет</legend>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__label" for="white">
+                  <input class="field-checkbox__input" id="white" type="checkbox" name="white">
+                  <span class="field-checkbox__name">Белый</span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__label" for="grey">
+                  <input class="field-checkbox__input" id="grey" type="checkbox" name="grey">
+                  <span class="field-checkbox__name">Серый</span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__label" for="tiffani">
+                  <input class="field-checkbox__input" id="tiffani" type="checkbox" name="tiffani">
+                  <span class="field-checkbox__name">«Тиффани»</span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__label" for="black">
+                  <input class="field-checkbox__input" id="black" type="checkbox" name="black">
+                  <span class="field-checkbox__name">Черный</span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__label" for="pink">
+                  <input class="field-checkbox__input" id="pink" type="checkbox" name="pink">
+                  <span class="field-checkbox__name">Розовый</span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__label" for="orange">
+                  <input class="field-checkbox__input field-colour__input--chbx" id="orange" type="checkbox" name="orange">
+                  <span class="field-checkbox__name">Оранжевый</span>
+                </label>
+              </div>
+
+            </fieldset>
+
+            <fieldset class="field-group">
+              <legend class="field-group__title">ФИО</legend>
 
               <div class="field-text">
                 <label class="field-text__name" for="user-name">
@@ -141,34 +141,29 @@
               </div>
             </fieldset>
 
-            <fieldset class="fieldset fieldset-tel">
-              <legend class="legend legend-tel">Тел</legend>
+            <fieldset class="field-group">
+              <legend class="visually-hidden">Позвонить или написать нам</legend>
 
               <div class="field-text">
                 <label class="fiels-text__name" for="user-tel">
+                  <span class="field-group__title">Тел</span>
                   <span class="fiels-text__icon fiels-text__icon--tel">иконка телефон</span>
                   <input class="fiels-text__input" id="user-tel" type="text" placeholder="+7 XXX XXX XX XX*">
                 </label>
               </div>
 
-            </fieldset>
 
-            <fieldset class="fieldset fieldset-email">
-              <legend class="legend legend-email">E-Mail</legend>
 
               <div class="fiels-text">
                 <label class="fiels-text__name" for="email">
+                  <span class="field-group__title">E-Mail</span>
                   <span class="fiels-text__icon fiels-text__icon--env">иконка конверт</span>
                   <input class="fiels-text__input" id="email" type="text" placeholder="Ваш Email*">
                 </label>
               </div>
 
-            </fieldset>
-
-            <fieldset class="fieldset fieldset-textarea">
-              <legend class="legend legend-textarea">Доп</legend>
-
               <div class="field-text">
+                <span class="field-group__title">Доп</span>
                 <label class="fiels-text__name" for="add-wishes"></label>
                 <textarea class="fiels-text__textarea"  id="add-wishes" name="add-wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
