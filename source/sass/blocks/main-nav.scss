@@ -1,0 +1,56 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 21px;
+  height: 20px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__inner {
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__item--search {
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 33px;
+}
+
+.main-nav__item--basket {
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 33px;
+}
+
+.main-nav__link {
+  display: block;
+  margin: 0;
+  padding: 32px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+}

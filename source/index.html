@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav page-header__nav">
 
         <a class="logo page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Изображение логотипа сайта">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Изображение логотипа сайта">
         </a>
 
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
 
         <div class="main-nav__inner">
 
@@ -42,26 +43,21 @@
 
     <main class="page-main">
 
-      <section class="hero">
+      <section class="hero hero--bg-image">
         <div class="hero__inner">
           <h1 class="hero__title">Милые штуки ручной работы для дома</h1>
         </div>
-      </section>
 
-      <section class="handmade">
-        <div class="handmade__inner">
+        <div class="hero__links">
+          <a class="hero__link hero__link--interior" href="#">
+            <span class="hero__link-text">Предметы интерьера</span>
+            <span class="hero__link-icon hero__link-icon--interior"></span>
+          </a>
 
-          <ul class="handmade__list">
-
-            <li class="handmade__item handmade__item--decor">
-              <a class="handmade__link" href="home-decor.html">Предметы интерьера</a>
-            </li>
-
-            <li class="handmade__item handmade__item--toys">
-              <a class="handmade__link" href="child-toys.html">Детские игрушки</a>
-            </li>
-
-          </ul>
+          <a class="hero__link hero__link--toy" href="#">
+            <span class="hero__link-text">Детские игрушки</span>
+            <span class="hero__link-icon hero__link-icon--toy"></span>
+          </a>
 
         </div>
       </section>
@@ -93,7 +89,7 @@
             </table>
 
             <p class="popular__picture">
-              <img class="popular__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="изображение Вязанные корзинки">
+              <img class="popular__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="изображение Вязанные корзинки">
             </p>
 
             <p class="popular__price-tag">
@@ -107,7 +103,7 @@
 
       <section class="advantages">
         <div class="advantages__inner">
-          <h2 class="advantages__title">Коротко о нас</h2>
+          <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list">
 
             <li class="advantages__item advantages__item--flower">
@@ -155,12 +151,10 @@
           </ul>
 
           <p class="reviews__toggles">
-            <button class="reviews__toggle reviews__toggle--left" type="button">
-              Передыдущий отзыв
+            <button class="reviews__toggle reviews__toggle--left" type="button" aria-label="предыдущий отзыв">
             </button>
 
-            <button class="reviews__toggle reviews__toggle--right" type="button">
-              Следующий отзыв
+            <button class="reviews__toggle reviews__toggle--right" type="button" aria-label="следующий отзыв">
             </button>
           </p>
 
