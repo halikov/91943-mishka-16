@@ -1,0 +1,45 @@
+@import "popup.scss";
+@import "buttons-group.scss";
+
+.popup-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup-order__title {
+  width: 150px;
+  margin: 0 auto;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.popup-order__text {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.popup-order__btn {
+  width: 260px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+  border: none;
+  background-color: #63d1bb;
+}

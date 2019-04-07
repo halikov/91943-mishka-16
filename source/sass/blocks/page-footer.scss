@@ -1,0 +1,51 @@
+@import "social-icons.scss";
+@import "copyright.scss";
+
+.page-footer {
+  width: 100%;
+  margin: 0;
+  padding: 25px 0;
+  background-color: #f1f1f1;
+}
+
+.page-footer__inner {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__socials {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.page-footer__social-list {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__social-item {
+  display: inline;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
+  margin: 0 auto;
+}

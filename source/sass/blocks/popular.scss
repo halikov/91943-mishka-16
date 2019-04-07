@@ -7,14 +7,13 @@
 
   &::after {
     content: "";
-    position: absolute;
-    bottom: 0;
     display: block;
-    width: 100%;
-    background-color: #444444;
+    height: 30px;
+    margin-top: 35px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: contain;
   }
 }
 
@@ -107,4 +106,14 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #444444;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
 }

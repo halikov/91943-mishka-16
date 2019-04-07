@@ -1,0 +1,99 @@
+.contacts {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.contacts__inner {
+  margin: 0 auto;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  border-collapse: collapse;
+}
+
+.contacts__row {
+  display: block;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.contacts__item {
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.contacts__item-value {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.contacts__item-value--mail {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover {
+    color: #62d1ba;
+  }
+
+  &:active {
+    color: rgba(98, 209, 186, 0.3);
+    border-bottom: 1px solid rgba(98, 209, 186, 0.3);
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__map-image {
+  max-width: 100%;
+}
+
+.contacts__button {
+  max-width: 260px;
+  margin: 39px auto;
+  padding: 0;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
+}

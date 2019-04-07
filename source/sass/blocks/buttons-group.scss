@@ -1,0 +1,11 @@
+@import "button-field.scss";
+
+.buttons-group {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

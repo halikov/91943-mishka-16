@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "OpenSans";
-  src:  url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "OpenSansBold";
-  src:  url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-  font-weight: 700;
-}
+@import "fonts.scss";
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;
@@ -19,6 +8,19 @@ body {
   background: #ffffff;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
 
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -27,5 +29,7 @@ body {
 @import "blocks/popular.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/popup-order.scss";
 @import "blocks/button.scss";
-

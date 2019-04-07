@@ -1,0 +1,27 @@
+.copyright {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.copyright__text {
+  margin-right: 30px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.copyright__link {
+  width: 30px;
+  height: 35px;
+  padding: 10px;
+
+  &:hover .copyright__icon-path {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__icon-path {
+    fill: #46c1ae;
+    fill-opacity: 0.3;
+  }
+}

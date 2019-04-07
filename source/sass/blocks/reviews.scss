@@ -3,6 +3,17 @@
   margin: 0;
   margin-top: 60px;
   padding: 0;
+
+  &::after {
+    content: "";
+    height: 30px;
+    display: block;
+    margin-top: 40px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: contain;
+  }
 }
 
 .reviews__inner {
@@ -97,4 +108,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #444444;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
 }
