@@ -1,0 +1,92 @@
+@import "video.scss";
+
+.presentations {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+}
+
+.presentations__inner {
+  margin: 0 auto;
+}
+
+.presentations__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #c1c1c1;
+}
+
+.presentations__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.presentations__title-text {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+}
+
+.presentations__title-icon {
+  display: block;
+  width: 35px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.presentations__icon {
+  width: 32px;
+  height: 23px;
+}
+
+.presentations__icon-path {
+  fill: #63d1bb;
+}
+
+.presentations__video {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.presentations__text {
+  width: 205px;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.presentations__button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
+}

@@ -1,4 +1,17 @@
 @import "fonts.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/hero.scss";
+@import "blocks/popular.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/popup-order.scss";
+@import "blocks/catalog.scss";
+@import "blocks/presentation.scss";
+@import "blocks/button.scss";
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;
@@ -21,15 +34,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/page-main.scss";
-@import "blocks/hero.scss";
-@import "blocks/popular.scss";
-@import "blocks/advantages.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/popup-order.scss";
-@import "blocks/button.scss";
