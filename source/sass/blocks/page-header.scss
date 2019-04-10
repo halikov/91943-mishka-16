@@ -14,4 +14,12 @@
   width: 90px;
   height: 40px;
   margin: 0 auto;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
