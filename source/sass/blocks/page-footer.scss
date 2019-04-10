@@ -1,21 +1,23 @@
-@import "social-icons.scss";
-@import "copyright.scss";
-
 .page-footer {
   width: 100%;
   margin: 0;
   padding: 25px 0;
-  background-color: #f1f1f1;
+  background-color: $color-background;
 }
 
 .page-footer__inner {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  margin: 0 30px;
   padding: 0;
 }
 
 .page-footer__socials {
-  width: 260px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   margin-bottom: 25px;
 
   &::after {
@@ -23,11 +25,14 @@
     display: block;
     width: 100%;
     margin-top: 25px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid $color-border;
   }
 }
 
 .page-footer__social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 150px;
   margin: 0 auto;
   padding: 0;
@@ -35,7 +40,6 @@
 }
 
 .page-footer__social-item {
-  display: inline;
   margin: 0;
   margin-right: 10px;
   font-size: 0;
@@ -47,5 +51,5 @@
 
 .page-footer__copyright {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }

@@ -18,8 +18,17 @@
 }
 
 .popular__inner {
+  width: 260px;
   margin: 0 auto;
   padding: 0;
+}
+
+.popular__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30px 0;
 }
 
 .popular__title {
@@ -29,7 +38,7 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $color-black;
 }
 
 .popular__label {
@@ -41,7 +50,7 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $color-primary;
 }
 
 .popular__description {
@@ -61,17 +70,18 @@
   padding: 10px 0;
   line-height: 20px;
   text-align: left;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-border;
 }
 
 .popular__option-value {
   padding: 10px 0;
   line-height: 20px;
   text-align: left;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-border;
 }
 
 .popular__picture {
+  width: 260px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -98,22 +108,21 @@
 
 .popular__btn-order {
   margin: 0;
-  margin-bottom: 35px;
   padding: 0;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #444444;
+  color: $color-basic;
 
   &:hover {
-    color: #ffffff;
-    background-color: #444444;
+    color: $color-white;
+    background-color: $color-basic;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #444444;
+    color: $color-white-30;
+    background-color: $color-basic;
   }
 }

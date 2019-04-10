@@ -5,7 +5,8 @@
 }
 
 .advantages__inner {
-  margin: 0 auto;
+  width: 260px;
+  margin: 0 30px;
 }
 
 .advantages__title {
@@ -14,10 +15,13 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $color-black;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -25,53 +29,45 @@
 }
 
 .advantages__item {
+  flex-basis: 260px;
   margin: 0;
-  padding: 10px 0;
-  padding-left: 50px;
-}
-
-.advantages__item--flower {
-  background-image: url("../img/icon-feature-flower.svg");
+  padding: 0;
   background-repeat: no-repeat;
-  background-position: 0 center;
-}
+  background-position: 0 25px;
 
-.advantages__item--money {
-  background-image: url("../img/icon-feature-money.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
+  &--flower {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
 
-.advantages__item--heart {
-  background-image: url("../img/icon-feature-heart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
+  &--money {
+    background-image: url("../img/icon-feature-money.svg");
+  }
 
-.advantages__item--ball {
-  background-image: url("../img/icon-feature-ball.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
+  &--heart {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
 
-.advantages__item--rocket {
-  background-image: url("../img/icon-feature-rocket.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
+  &--ball {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
 
-.advantages__item--gift {
-  background-image: url("../img/icon-feature-gift.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
+  &--rocket {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 .advantages__slogan {
   max-width: 260px;
   margin: 0;
   padding: 0;
+  padding-top: 80px;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: $color-black;
+  vertical-align: bottom;
 }

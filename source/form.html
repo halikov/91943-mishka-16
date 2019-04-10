@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - Вязание на заказ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,7 +15,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Изображение логотипа сайта">
         </a>
 
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть - Закрыть меню"></button>
 
         <div class="main-nav__inner">
             <ul class="main-nav__list">
@@ -56,7 +59,7 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 
               <fieldset class="field-group">
-                <legend class="field-group__legend">Тип</legend>
+                <legend class="field-group__title">Тип</legend>
 
                 <div class="field-radio">
                   <label class="field-radio__label" for="decor-mod">
@@ -176,7 +179,7 @@
               </fieldset>
 
               <p><sup>&#10035;</sup>Поля обязательны для заполнения</p>
-              <button class="filter-form__button button">отправить заказ</button>
+              <button class="button">отправить заказ</button>
             </form>
           </div>
         </div>
@@ -231,8 +234,8 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <b class="copyright__text">Разработано</b>
             <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path class="copyright__icon-path" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>

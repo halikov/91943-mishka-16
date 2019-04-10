@@ -1,24 +1,35 @@
+@import "./normalize.css";
 @import "fonts.scss";
+@import "colors.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/hero.scss";
+@import "blocks/order-form.scss";
 @import "blocks/popular.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/popup-order.scss";
+@import "blocks/popup.scss";
+@import "blocks/buttons-group.scss";
 @import "blocks/catalog.scss";
+@import "blocks/product.scss";
 @import "blocks/presentation.scss";
+@import "blocks/field-group.scss";
+@import "blocks/video.scss";
+@import "blocks/social-icons.scss";
+@import "blocks/copyright.scss";
+@import "blocks/button-field.scss";
 @import "blocks/button.scss";
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #444444;
-  background: #ffffff;
+  color: $color-basic;
+  background: $color-white;
 }
 
 .visually-hidden:not(:focus):not(:active),

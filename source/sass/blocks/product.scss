@@ -8,7 +8,7 @@
   width: 260px;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid #c1c1c1;
+  border: 1px solid $color-border;
 }
 
 .product__picture {
@@ -26,7 +26,7 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: $color-black;
 }
 
 .product__description {
@@ -54,7 +54,7 @@
     display: block;
     width: 100%;
     margin: 0 30px;
-    border: 1px solid #c1c1c1;
+    border: 1px solid $color-border;
   }
 }
 
@@ -64,7 +64,7 @@
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #000000;
+  color: $color-black;
 }
 
 .product__basket-link {

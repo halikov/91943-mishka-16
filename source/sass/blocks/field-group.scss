@@ -1,0 +1,31 @@
+.field-group {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.field-group__title {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-primary;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    display: block;
+    width: 190px;
+    height: 1px;
+    background-color: $color-primary;
+  }
+}

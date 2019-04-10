@@ -3,11 +3,11 @@
   padding: 10px;
 
   &:hover .social-link__icon-path {
-    fill: #46c1ae;
+    fill: $color-primary-hovered;
   }
 
   &:active .social-link__icon-path {
-    fill: #46c1ae;
+    fill: $color-primary-hovered;
     fill-opacity: 0.3;
   }
 }
