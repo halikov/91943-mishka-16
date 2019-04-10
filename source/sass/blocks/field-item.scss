@@ -1,0 +1,101 @@
+.field-item {
+  @include width-full;
+  margin-bottom: 30px;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:hover .field-item__checker {
+    border-color: $color-primary-hovered;
+  }
+
+  &:active .field-item__checker {
+    border-color: $color-basic-30;
+  }
+}
+
+.field-item__block {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include positioner-small;
+  cursor: pointer;
+}
+
+.field-item__text {
+  width: 155px;
+  margin: 0;
+  padding: 10px 0;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-black;
+}
+
+.field-item__icon {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+  width: 25px;
+  height: 20px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &--tel {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--env {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.field-item__input {
+  @include width-full;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  box-sizing: border-box;
+
+  &:checked + .field-item__checker--radio::after {
+    display: block;
+  }
+
+  &:checked + .field-item__checker--checkbox {
+    background-image: url("../img/icon-tick.svg");
+  }
+}
+
+.field-item__checker {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid $color-basic;
+  background-color: $color-white;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+
+  &--radio {
+    position: relative;
+    border-radius: 100%;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "";
+      display: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      background-color: $color-primary-hovered;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

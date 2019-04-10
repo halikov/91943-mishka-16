@@ -1,0 +1,40 @@
+.copyright {
+  display: block;
+  padding: 0;
+}
+
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+
+  &:hover .copyright__icon-path {
+    fill: $color-primary-hovered;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  display: block;
+  margin-right: 30px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-black;
+}
+
+.copyright__icon {
+  display: block;
+  width: 30px;
+  height: 35px;
+}
+
+.copyright__icon-path {
+  fill: $color-primary;
+}

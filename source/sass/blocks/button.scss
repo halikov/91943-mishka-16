@@ -1,0 +1,48 @@
+.button {
+  display: block;
+
+  @include positioner-small;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-basic;
+  border: 2px solid $color-basic;
+  background-color: $color-white;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-basic;
+  }
+
+  &:active {
+    color: $color-white-30;
+    background-color: $color-basic;
+  }
+
+  &--presentation {
+    width: 192px;
+    padding: 16px 20px;
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  &--popup {
+    color: $color-white;
+    border-color: $color-primary;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary-hovered;
+    }
+
+    &:active {
+      color: $color-white-30;
+      background-color: $color-primary-hovered;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.buttons-group {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  width: 100%;
+
+  @include reset;
+  border: none;
+}

@@ -1,0 +1,31 @@
+.button-field {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button-field__label {
+  @include reset;
+  box-sizing: border-box;
+}
+
+.button-field__text {
+  display: block;
+  width: 80px;
+  padding: 10px 25px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  border: 2px solid $color-basic;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 2px solid $color-basic;
+  }
+}
+
+.button-field__input:checked + .button-field__text {
+  border: 2px solid $color-primary;
+}

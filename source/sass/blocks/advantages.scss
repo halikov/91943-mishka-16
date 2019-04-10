@@ -1,0 +1,69 @@
+.advantages {
+  @include width-full;
+  padding: 0;
+}
+
+.advantages__inner {
+  @include positioner-small;
+}
+
+.advantages__title {
+  @include reset;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include reset-ul;
+}
+
+.advantages__item {
+  flex-basis: 260px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0 25px;
+
+  &--flower {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--heart {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--ball {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--rocket {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+.advantages__slogan {
+  max-width: 260px;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-black;
+  vertical-align: bottom;
+}

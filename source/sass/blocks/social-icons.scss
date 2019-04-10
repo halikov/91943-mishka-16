@@ -1,0 +1,17 @@
+.social-link {
+  width: 25px;
+  padding: 10px;
+
+  &:hover .social-link__icon-path {
+    fill: $color-primary-hovered;
+  }
+
+  &:active .social-link__icon-path {
+    fill: $color-primary-hovered;
+    fill-opacity: 0.3;
+  }
+}
+
+.social-link__icon {
+  max-width: 100%;
+}
