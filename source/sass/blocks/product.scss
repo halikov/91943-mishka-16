@@ -1,19 +1,16 @@
 .product {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   padding: 0;
 }
 
 .product__container {
-  width: 260px;
-  margin: 0 auto;
+  @include positioner-small;
   padding: 0;
   border: 1px solid $color-border;
 }
 
 .product__picture {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   margin-bottom: 30px;
   padding: 0;
 }
@@ -46,8 +43,8 @@
   justify-content: space-between;
   align-items: center;
   width: 210px;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
 
   &::before {
     content: "";

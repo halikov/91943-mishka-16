@@ -1,6 +1,5 @@
 .field-item {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   margin-bottom: 30px;
   padding: 0;
   box-sizing: border-box;
@@ -21,8 +20,8 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 260px;
-  margin: 0 30px;
+
+  @include positioner-small;
   cursor: pointer;
 }
 
@@ -57,8 +56,7 @@
 }
 
 .field-item__input {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   padding: 5px;
   border: none;
   border-bottom: 2px solid $color-black;

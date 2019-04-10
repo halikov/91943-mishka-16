@@ -1,6 +1,5 @@
 .presentations {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   margin-bottom: 55px;
   padding: 0;
 }
@@ -13,8 +12,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 260px;
-  margin: 0 auto;
+
+  @include positioner-small;
   padding: 0;
   padding-bottom: 30px;
   border: 1px solid $color-border;
@@ -28,8 +27,7 @@
 }
 
 .presentations__title-text {
-  margin: 0;
-  padding: 0;
+  @include reset;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
@@ -55,15 +53,15 @@
 
 .presentations__video {
   max-width: 100%;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
 }
 
 .presentations__text {
   width: 205px;
-  margin: 0;
+
+  @include reset;
   margin-bottom: 30px;
-  padding: 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;

@@ -1,19 +1,17 @@
 .contacts {
   width: 100%;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
   padding-bottom: 40px;
 }
 
 .contacts__inner {
-  width: 260px;
-  margin: 0 30px;
+  @include positioner-small;
 }
 
 .contacts__title {
-  margin: 0;
+  @include reset;
   margin-bottom: 40px;
-  padding: 0;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -22,8 +20,8 @@
 
 .contacts__list {
   width: 100%;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -33,22 +31,20 @@
 
 .contacts__row {
   display: block;
-  margin: 0;
+
+  @include reset;
   margin-bottom: 40px;
-  padding: 0;
 }
 
 .contacts__item {
-  margin: 0;
-  padding: 0;
+  @include reset;
   padding-right: 30px;
   vertical-align: top;
   box-sizing: border-box;
 }
 
 .contacts__item-value {
-  margin: 0;
-  padding: 0;
+  @include reset;
   vertical-align: top;
 
   &--mail {

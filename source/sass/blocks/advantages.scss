@@ -1,17 +1,14 @@
 .advantages {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   padding: 0;
 }
 
 .advantages__inner {
-  width: 260px;
-  margin: 0 30px;
+  @include positioner-small;
 }
 
 .advantages__title {
-  margin: 0;
-  padding: 0;
+  @include reset;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
@@ -23,9 +20,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+  @include reset-ul;
 }
 
 .advantages__item {

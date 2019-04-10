@@ -1,8 +1,8 @@
 .hero {
   width: 100%;
   height: 175px;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
   background-color: $color-background;
   background-repeat: no-repeat;
   background-position: top center;
@@ -19,8 +19,7 @@
 // }
 
 .hero__title {
-  width: 260px;
-  margin: 0 auto;
+  @include positioner-small;
   padding: 10px;
   padding-top: 80px;
   font-family: "OpenSansBold", "Arial", sans-serif;
@@ -82,8 +81,8 @@
 
 .hero__link-icon {
   display: block;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
   background-repeat: no-repeat;
   background-position: center;
 

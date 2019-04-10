@@ -1,6 +1,5 @@
 .reviews {
-  width: 100%;
-  margin: 0;
+  @include width-full;
   margin-top: 60px;
   padding: 0;
 
@@ -17,13 +16,11 @@
 }
 
 .reviews__inner {
-  width: 260px;
-  margin: 0 30px;
+  @include positioner-small;
 }
 
 .reviews__title {
-  margin: 0;
-  padding: 0;
+  @include reset;
   padding-bottom: 35px;
   font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
@@ -33,26 +30,22 @@
 
 .reviews__list {
   width: 100%;
-  margin: 0;
+
+  @include reset-ul;
   margin-bottom: 35px;
-  padding: 0;
-  list-style: none;
 }
 
 .reviews__item {
-  margin: 0;
-  padding: 0;
+  @include reset;
 }
 
 .reviews__blockquote {
-  margin: 0;
-  padding: 0;
+  @include reset;
 }
 
 .reviews__text {
-  margin: 0;
+  @include reset;
   margin-bottom: 25px;
-  padding: 0;
   font-size: 15px;
   line-height: 30px;
   text-align: left;
@@ -78,9 +71,9 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 0;
+
+  @include reset;
   margin-bottom: 35px;
-  padding: 0;
   border: 1px solid $color-border;
 
   &::after {

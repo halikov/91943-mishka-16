@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
   padding-top: 30px;
   padding-bottom: 45px;
   border: 1px solid $color-border;
@@ -21,9 +21,8 @@
 }
 
 .popup-order__list {
-  margin: 0;
+  @include reset;
   margin-bottom: 30px;
-  padding: 0;
 }
 
 .popup-order__text {

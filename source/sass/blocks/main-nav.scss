@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
-  width: 260px;
-  padding: 0;
+
+  @include positioner-small;
 }
 
 .main-nav__toggle {
@@ -20,14 +20,11 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-ul;
 }
 
 .main-nav__item {
-  margin: 0;
-  padding: 0;
+  @include reset;
   border-bottom: 1px solid $color-border;
   background-repeat: no-repeat;
   background-position: 0 20px;
