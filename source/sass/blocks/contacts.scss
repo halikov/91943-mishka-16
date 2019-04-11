@@ -1,5 +1,5 @@
 .contacts {
-  width: 100%;
+  width: auto;
 
   @include reset;
   padding-bottom: 40px;
@@ -19,6 +19,10 @@
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
 
   @include reset;
@@ -64,7 +68,7 @@
 
 .contacts__map {
   position: relative;
-  width: 320px;
+  width: $width-small;
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
@@ -78,4 +82,32 @@
   position: absolute;
   top: 145px;
   left: 135px;
+}
+
+@media (min-width: $width-medium) {
+  .contacts {
+    @include reset;
+  }
+
+  .contacts__inner {
+    @include positioner-medium;
+  }
+
+  .contacts__list {
+    width: 100%;
+  }
+
+  .contacts__map {
+    width: $width-medium;
+  }
+}
+
+@media (min-width: $width-large) {
+  .contacts {
+    @include reset;
+  }
+
+  .contacts__inner {
+    @include positioner-large;
+  }
 }

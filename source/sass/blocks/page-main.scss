@@ -3,6 +3,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: $width-small;
+}
 
-  @include width-full;
+@media (min-width: $width-medium) {
+  .page-main {
+    width: $width-medium;
+  }
+}
+
+@media (min-width: $width-large) {
+  .page-main {
+    width: $width-large;
+  }
 }

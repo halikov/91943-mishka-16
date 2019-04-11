@@ -78,3 +78,30 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+@media (min-width: $width-medium) {
+  .product__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .product__picture {
+    width: 50%;
+  }
+
+  .product__text {
+    width: 50%;
+  }
+}
+
+@media (min-width: $width-large) {
+  .product__picture {
+    width: 100%;
+  }
+
+  .product__text {
+    width: 100%;
+  }
+}

@@ -8,6 +8,16 @@
   margin: 0 30px;
 }
 
+@mixin positioner-medium {
+  width: 668px;
+  margin: 0 50px;
+}
+
+@mixin positioner-large {
+  width: 1050px;
+  margin: 0 50px;
+}
+
 @mixin reset {
   margin: 0;
   padding: 0;

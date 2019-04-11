@@ -46,3 +46,16 @@
     }
   }
 }
+
+@media (min-width: $width-medium) {
+  .button--presentation {
+    order: 1;
+    width: 584px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .button--presentation {
+    width: 230px;
+  }
+}

@@ -1,24 +1,24 @@
 .page-header {
-  @include width-full;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: $width-small;
+
+  @include reset;
   background-color: $color-white;
 }
 
 .page-header__nav {
-  margin: 20px 30px 0;
+  @include reset;
 }
 
-.page-header__logo {
-  display: block;
-  width: 90px;
-  height: 40px;
-  margin: 0 auto;
-
-  &[href]:hover {
-    opacity: 0.6;
+@media (min-width: $width-medium) {
+  .page-header {
+    width: $width-medium;
   }
+}
 
-  &:active {
-    opacity: 0.3;
+@media (min-width: $width-large) {
+  .page-header {
+    width: $width-large;
   }
 }

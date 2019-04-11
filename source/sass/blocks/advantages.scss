@@ -1,6 +1,5 @@
 .advantages {
-  @include width-full;
-  padding: 0;
+  @include reset;
 }
 
 .advantages__inner {
@@ -19,13 +18,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
 
   @include reset-ul;
 }
 
 .advantages__item {
-  flex-basis: 260px;
+  width: 260px;
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
@@ -66,4 +67,34 @@
   line-height: 20px;
   color: $color-black;
   vertical-align: bottom;
+}
+
+@media (min-width: $width-medium) {
+  .advantages__inner {
+    @include positioner-medium;
+  }
+
+  .advantages__list {
+    flex-wrap: wrap;
+    height: 500px;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $width-large) {
+  .advantages__inner {
+    @include positioner-large;
+  }
+
+  .advantages__list {
+    flex-wrap: wrap;
+    height: 500px;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
 }

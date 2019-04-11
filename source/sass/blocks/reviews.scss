@@ -1,7 +1,6 @@
 .reviews {
-  @include width-full;
+  @include reset;
   margin-top: 60px;
-  padding: 0;
 
   &::after {
     content: "";
@@ -111,5 +110,27 @@
 
   &--right {
     background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+
+@media (min-width: $width-medium) {
+  .reviews__inner {
+    position: relative;
+
+    @include positioner-medium;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 140px;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
