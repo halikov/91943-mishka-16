@@ -3,6 +3,12 @@
   flex-flow: wrap row;
   justify-content: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $width-medium) {
+    justify-content: space-between;
+  }
 
   @include reset;
   border: none;

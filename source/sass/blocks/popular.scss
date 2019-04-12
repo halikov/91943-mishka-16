@@ -3,38 +3,74 @@
 
   @include reset;
   padding-bottom: 35px;
+  overflow: hidden;
 
   &::after {
     content: "";
     display: block;
     height: 30px;
     margin-top: 35px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-size: contain;
   }
 }
 
 .popular__inner {
   @include reset;
+  @include positioner-small;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $width-large) {
+    @include positioner-large;
+    padding-top: 140px;
+  }
 }
 
 .popular__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: $width-small;
-  margin: 30px 0;
+  width: 100%;
+}
+
+.popular__header {
+  width: 100%;
+
+  @media (min-width: $width-medium) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $width-large) {
+    z-index: 2;
+    width: 700px;
+  }
 }
 
 .popular__title {
   @include reset;
   margin-bottom: 10px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-medium) {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  @media (min-width: $width-large) {
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .popular__label {
@@ -42,17 +78,59 @@
 
   @include reset;
   margin-bottom: 30px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: $color-primary;
+
+  @media (min-width: $width-medium) {
+    width: 100px;
+    margin: 0;
+    line-height: 17px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 100px;
+    margin: 0;
+    line-height: 17px;
+  }
+}
+
+.popular__text {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  @media (min-width: $width-large) {
+    z-index: -1;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .popular__description {
+  width: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 350px;
+    margin-left: 175px;
+    padding-right: 54px;
+  }
 }
 
 .popular__parameters {
@@ -61,6 +139,16 @@
   margin-bottom: 25px;
   padding: 0;
   box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $width-large) {
+    width: 350px;
+    margin-left: 175px;
+    padding-right: 54px;
+  }
 }
 
 .popular__option {
@@ -83,10 +171,22 @@
   padding: 0;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 334px;
+  }
+
+  @media (min-width: $width-large) {
+    top: -70px;
+    width: 525px;
+  }
 }
 
 .popular__image {
-  width: 100%;
+  max-width: 100%;
 }
 
 .popular__price-tag {
@@ -95,84 +195,22 @@
   @include reset;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $width-large) {
+    width: 350px;
+    margin-left: 175px;
+    padding-right: 54px;
+  }
 }
 
 .popular__price {
   display: block;
   padding: 25px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
-}
-
-.popular__btn-order {
-  @include reset;
-  font-family: "OpenSansBold", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color-basic;
-
-  &:hover {
-    color: $color-white;
-    background-color: $color-basic;
-  }
-
-  &:active {
-    color: $color-white-30;
-    background-color: $color-basic;
-  }
-}
-
-@media (min-width: $width-medium) {
-  .popular__item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: $width-medium;
-    margin: 0 auto;
-  }
-
-  .popular__text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 500px;
-  }
-
-  .popular__description {
-    order: 1;
-    width: 50%;
-  }
-
-  .popular__parameters {
-    order: 1;
-    width: 50%;
-  }
-
-  .popular__picture {
-    order: 2;
-    width: 50%;
-  }
-
-  .popular__price-tag {
-    order: 1;
-    width: 50%;
-  }
-}
-
-@media (min-width: $width-large) {
-  .popular__item {
-    width: $width-large;
-  }
-
-  .popular__description {
-    width: 50%;
-  }
-
-  .popular__parameters {
-    width: 50%;
-  }
+  font-weight: 700;
 }

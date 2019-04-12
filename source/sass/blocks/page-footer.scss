@@ -1,9 +1,19 @@
 .page-footer {
-  width: $width-small;
-
-  @include reset;
+  width: auto;
+  height: 160px;
   padding: 25px 0;
   background-color: $color-background;
+  box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    height: 145px;
+    padding: 40px 0;
+  }
+
+  @media (min-width: $width-large) {
+    height: 145px;
+    padding: 40px 0;
+  }
 }
 
 .page-footer__inner {
@@ -15,14 +25,32 @@
 
   @include positioner-small;
   padding: 0;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+  }
+
+  @media (min-width: $width-large) {
+    @include positioner-large;
+  }
 }
 
 .page-footer__logo {
   display: none;
+  text-align: left;
+
+  @media (min-width: $width-medium) {
+    display: block;
+    width: 220px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 350px;
+  }
 }
 
 .page-footer__socials {
-  @include width-full;
+  width: 100%;
   margin-bottom: 25px;
 
   &::after {
@@ -32,15 +60,41 @@
     margin-top: 25px;
     border-bottom: 1px solid $color-border;
   }
+
+  @media (min-width: $width-medium) {
+    width: 220px;
+    margin-bottom: 0;
+    padding-top: 15px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $width-large) {
+    width: 350px;
+  }
 }
 
 .page-footer__social-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 260px;
 
   @include reset-ul;
+
+  @media (min-width: $width-medium) {
+    width: 160px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 160px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__social-item {
@@ -54,44 +108,9 @@
 }
 
 .page-footer__copyright {
-  @include width-full;
-}
+  width: 260px;
 
-@media (min-width: $width-medium) {
-  .page-footer {
-    width: $width-medium;
-  }
-
-  .page-footer__inner {
-    @include positioner-medium;
-  }
-
-  .page-footer__logo {
-    display: block;
-    width: 33%;
-
-    @include reset;
-  }
-
-  .page-footer__socials {
-    width: 33%;
-
-    @include reset;
-  }
-
-  .page-footer__copyright {
-    width: 33%;
-
-    @include reset;
-  }
-}
-
-@media (min-width: $width-large) {
-  .page-footer {
-    width: $width-large;
-  }
-
-  .page-footer__inner {
-    @include positioner-large;
+  @media (min-width: $width-medium) {
+    width: 220px;
   }
 }

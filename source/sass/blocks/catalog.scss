@@ -1,73 +1,44 @@
 .catalog {
-  @include width-full;
+  width: 100%;
   margin-top: 30px;
   padding: 0;
 }
 
 .catalog__inner {
   margin: 0 auto;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+  }
+
+  @media (min-width: $width-large) {
+    @include positioner-large;
+  }
 }
 
 .catalog__list {
   @include reset-ul;
-}
 
-.catalog__item {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-}
-
-@media (min-width: $width-medium) {
-  .catalog {
-    width: $width-medium;
-  }
-
-  .catalog__inner {
-    @include positioner-medium;
-  }
-
-  .catalog__list {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: $width-medium) {
-  .catalog {
-    width: $width-medium;
-  }
-
-  .catalog__inner {
-    @include positioner-medium;
-  }
-
-  .catalog__list {
+  @media (min-width: $width-medium) {
     flex-direction: column;
   }
 
-  .catalog__item {
-    width: 100%;
-  }
-}
-
-@media (min-width: $width-large) {
-  .catalog {
-    width: $width-large;
-  }
-
-  .catalog__inner {
-    @include positioner-large;
-  }
-
-  .catalog__list {
+  @media (min-width: $width-large) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
 
-  .catalog__item {
+.catalog__item {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  @media (min-width: $width-large) {
     width: 316px;
   }
 }

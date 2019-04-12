@@ -20,9 +20,9 @@
   margin: 0 25px;
   margin-bottom: 15px;
   padding: 0;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
+  font-weight: 700;
   color: $color-black;
 }
 
@@ -31,7 +31,6 @@
   margin: 0 25px;
   margin-bottom: 30px;
   padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 30px;
 }
@@ -58,9 +57,9 @@
 .product__price {
   display: block;
   padding: 28px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
+  font-weight: 700;
   color: $color-black;
 }
 

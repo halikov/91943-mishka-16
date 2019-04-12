@@ -3,6 +3,10 @@
   margin-left: 5px;
   padding: 0;
   cursor: pointer;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .button-field__label {
@@ -14,12 +18,16 @@
   display: block;
   width: 80px;
   padding: 10px 25px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
+  font-weight: 700;
   text-align: center;
   border: 2px solid $color-basic;
   box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    width: 110px;
+  }
 
   &:hover {
     border: 2px solid $color-basic;

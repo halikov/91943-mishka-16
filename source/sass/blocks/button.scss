@@ -1,12 +1,11 @@
 .button {
   display: block;
-
-  @include positioner-small;
+  width: 260px;
   padding: 15px 30px;
   text-align: center;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-basic;
@@ -32,9 +31,19 @@
   }
 
   &--popup {
+    width: 260px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
     color: $color-white;
     border-color: $color-primary;
     background-color: $color-primary;
+
+    @media (min-width: $width-medium) {
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
 
     &:hover {
       background-color: $color-primary-hovered;
@@ -48,14 +57,22 @@
 }
 
 @media (min-width: $width-medium) {
-  .button--presentation {
+  &--presentation {
     order: 1;
     width: 584px;
+  }
+
+  &--order-m {
+    width: 290px;
   }
 }
 
 @media (min-width: $width-large) {
-  .button--presentation {
+  &--presentation {
     width: 230px;
+  }
+
+  &--order-m {
+    width: 290px;
   }
 }

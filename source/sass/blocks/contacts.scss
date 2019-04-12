@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   width: auto;
 
   @include reset;
@@ -7,37 +8,99 @@
 
 .contacts__inner {
   @include positioner-small;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+
+    padding-top: 45px;
+  }
+
+  @media (min-width: $width-large) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include positioner-large;
+    margin-top: 60px;
+  }
 }
 
 .contacts__title {
   @include reset;
   margin-bottom: 40px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-medium) {
+    padding: 15px 0;
+    font-size: 43px;
+    line-height: 50px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+
+  @media (min-width: $width-large) {
+    width: 50%;
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+
+    background-position: 60px 0;
+  }
 }
 
 .contacts__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   width: 100%;
 
   @include reset;
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: $color-basic;
   border-collapse: collapse;
+
+  @media (min-width: $width-medium) {
+    width: 100%;
+
+    & tbody {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 350px;
+    margin-left: 175px;
+
+    & tbody {
+      flex-direction: column;
+    }
+  }
 }
 
 .contacts__row {
   display: block;
+  width: 100%;
 
   @include reset;
   margin-bottom: 40px;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $width-large) {
+    width: 100%;
+  }
 }
 
 .contacts__item {
@@ -68,46 +131,61 @@
 
 .contacts__map {
   position: relative;
-  width: $width-small;
+  width: 100%;
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
+  text-align: center;
+
+  @media (min-width: $width-medium) {
+    top: 0;
+    right: 0;
+    widrh: 100%;
+  }
+
+  @media (min-width: $width-large) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 525px;
+    height: 455px;
+  }
 }
 
 .contacts__map-image {
   max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
 }
 
 .contacts__map-marker {
   position: absolute;
-  top: 145px;
-  left: 135px;
-}
+  top: 170px;
+  left: 160px;
 
-@media (min-width: $width-medium) {
-  .contacts {
-    @include reset;
+  @media (min-width: $width-medium) {
+    top: 145px;
+    left: 365px;
   }
 
-  .contacts__inner {
-    @include positioner-medium;
-  }
-
-  .contacts__list {
-    width: 100%;
-  }
-
-  .contacts__map {
-    width: $width-medium;
+  @media (min-width: $width-large) {
+    top: 140px;
+    left: 245px;
   }
 }
 
-@media (min-width: $width-large) {
-  .contacts {
-    @include reset;
+.contacts-button {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $width-medium) {
+    width: 230px;
   }
 
-  .contacts__inner {
-    @include positioner-large;
+  @media (min-width: $width-large) {
+    width: 230px;
+    margin-left: 275px;
   }
 }

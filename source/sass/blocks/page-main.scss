@@ -1,19 +1,5 @@
 .page-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: $width-small;
-}
+  width: auto;
 
-@media (min-width: $width-medium) {
-  .page-main {
-    width: $width-medium;
-  }
-}
-
-@media (min-width: $width-large) {
-  .page-main {
-    width: $width-large;
-  }
+  @include reset;
 }

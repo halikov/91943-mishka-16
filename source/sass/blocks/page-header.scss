@@ -1,24 +1,29 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  width: $width-small;
+  width: auto;
+  height: 395px;
 
   @include reset;
   background-color: $color-white;
+
+  @media (min-width: $width-medium) {
+    height: 160px;
+
+    .page-header__nav {
+      @include positioner-medium;
+    }
+  }
+
+  @media (min-width: $width-large) {
+    height: 150px;
+
+    .page-header__nav {
+      @include positioner-large;
+    }
+  }
 }
 
 .page-header__nav {
   @include reset;
-}
-
-@media (min-width: $width-medium) {
-  .page-header {
-    width: $width-medium;
-  }
-}
-
-@media (min-width: $width-large) {
-  .page-header {
-    width: $width-large;
-  }
 }
