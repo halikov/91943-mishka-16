@@ -11,7 +11,6 @@
 
 .button-field__label {
   @include reset;
-  box-sizing: border-box;
 }
 
 .button-field__text {
@@ -23,7 +22,6 @@
   font-weight: 700;
   text-align: center;
   border: 2px solid $color-basic;
-  box-sizing: border-box;
 
   @media (min-width: $width-medium) {
     width: 110px;

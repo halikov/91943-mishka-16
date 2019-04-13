@@ -101,7 +101,6 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
 
   @media (min-width: $width-medium) {
     width: 100%;
@@ -119,7 +118,6 @@
   width: auto;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 
   @media (min-width: $width-medium) {
     width: 50%;
@@ -138,7 +136,6 @@
   margin-top: 40px;
   margin-bottom: 25px;
   padding: 0;
-  box-sizing: border-box;
 
   @media (min-width: $width-medium) {
     width: 50%;
@@ -170,7 +167,6 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  box-sizing: border-box;
 
   @media (min-width: $width-medium) {
     position: absolute;
@@ -194,7 +190,6 @@
 
   @include reset;
   text-align: center;
-  box-sizing: border-box;
 
   @media (min-width: $width-medium) {
     width: 50%;

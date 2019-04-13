@@ -5,17 +5,17 @@
 
 @mixin positioner-small {
   width: 260px;
-  margin: 0 30px;
+  margin: 0 auto;
 }
 
 @mixin positioner-medium {
   width: 668px;
-  margin: 0 50px;
+  margin: 0 auto;
 }
 
 @mixin positioner-large {
   width: 1050px;
-  margin: 0 50px;
+  margin: 0 auto;
 }
 
 @mixin reset {
