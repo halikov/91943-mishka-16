@@ -1,49 +1,29 @@
-@import "./normalize.css";
-@import "fonts.scss";
-@import "colors.scss";
-@import "mixins.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/page-main.scss";
-@import "blocks/hero.scss";
-@import "blocks/order-form.scss";
-@import "blocks/popular.scss";
-@import "blocks/advantages.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/popup-order.scss";
-@import "blocks/popup.scss";
-@import "blocks/buttons-group.scss";
-@import "blocks/catalog.scss";
-@import "blocks/product.scss";
-@import "blocks/presentation.scss";
-@import "blocks/field-group.scss";
-@import "blocks/field-item.scss";
-@import "blocks/video.scss";
-@import "blocks/social-icons.scss";
-@import "blocks/copyright.scss";
-@import "blocks/button-field.scss";
-@import "blocks/button.scss";
-
-body {
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  color: $color-basic;
-  background: $color-white;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
+@import "normalize";
+@import "fonts";
+@import "colors";
+@import "mixins";
+@import "variables";
+@import "blocks/skaffolding";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/page-main";
+@import "blocks/hero";
+@import "blocks/order-form";
+@import "blocks/popular";
+@import "blocks/advantages";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+@import "blocks/popup-order";
+@import "blocks/popup";
+@import "blocks/buttons-group";
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/presentation";
+@import "blocks/field-group";
+@import "blocks/field-item";
+@import "blocks/video";
+@import "blocks/social-icons";
+@import "blocks/copyright";
+@import "blocks/button-field";
+@import "blocks/button";

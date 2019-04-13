@@ -1,31 +1,56 @@
 .reviews {
-  @include width-full;
+  @include reset;
   margin-top: 60px;
-  padding: 0;
+
+  @media (min-width: $width-medium) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 
   &::after {
     content: "";
     height: 30px;
     display: block;
     margin-top: 40px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-size: contain;
   }
 }
 
 .reviews__inner {
+  position: relative;
+
   @include positioner-small;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+  }
+
+  @media (min-width: $width-large) {
+    @include positioner-large;
+  }
 }
 
 .reviews__title {
   @include reset;
   padding-bottom: 35px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-medium) {
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
@@ -33,6 +58,15 @@
 
   @include reset-ul;
   margin-bottom: 35px;
+
+  @media (min-width: $width-medium) {
+    width: 100%;
+  }
+
+  @media (min-width: $width-large) {
+    width: 875px;
+    margin-left: 175px;
+  }
 }
 
 .reviews__item {
@@ -40,6 +74,8 @@
 }
 
 .reviews__blockquote {
+  width: auto;
+
   @include reset;
 }
 
@@ -52,7 +88,6 @@
 }
 
 .reviews__author-name {
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-style: normal;
@@ -60,7 +95,6 @@
 }
 
 .reviews__author-nickname {
-  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 25px;
   color: $color-basic;
@@ -75,6 +109,22 @@
   @include reset;
   margin-bottom: 35px;
   border: 1px solid $color-border;
+
+  @media (min-width: $width-medium) {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 167px;
+    border: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $width-large) {
+    width: 175px;
+  }
 
   &::after {
     content: "";
@@ -111,5 +161,20 @@
 
   &--right {
     background-image: url("../img/icon-right-arrow.svg");
+  }
+}
+
+.reviews__button {
+  width: 260px;
+
+  @media (min-width: $width-medium) {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 175px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 175px;
   }
 }

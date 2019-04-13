@@ -1,35 +1,71 @@
 .advantages {
-  @include width-full;
-  padding: 0;
+  @include reset;
 }
 
 .advantages__inner {
   @include positioner-small;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+  }
+
+  @media (min-width: $width-large) {
+    @include positioner-large;
+  }
 }
 
 .advantages__title {
   @include reset;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-medium) {
+    margin-bottom: 55px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-bottom: 50px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .advantages__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
 
   @include reset-ul;
+
+  @media (min-width: $width-large) {
+    margin: 0 175px;
+  }
 }
 
 .advantages__item {
-  flex-basis: 260px;
+  width: auto;
+  height: 90px;
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
-  background-position: 0 25px;
+  background-position: 0 0;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+    height: 100px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 50%;
+    height: 100px;
+  }
 
   &--flower {
     background-image: url("../img/icon-feature-flower.svg");
@@ -59,11 +95,23 @@
 .advantages__slogan {
   max-width: 260px;
   margin: 0;
+  margin-top: 38px;
   padding: 0;
-  padding-top: 80px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   color: $color-black;
   vertical-align: bottom;
+
+  @media (min-width: $width-medium) {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+
+  @media (min-width: $width-large) {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+  }
 }
