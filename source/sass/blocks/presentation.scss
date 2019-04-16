@@ -7,6 +7,18 @@
 
 .presentations__inner {
   @include positioner-small;
+
+  @media (min-width: $width-medium) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $width-large) {
+    width: 100%;
+
+    @include reset;
+    margin-top: 50px;
+  }
 }
 
 .presentations__item {
@@ -18,6 +30,21 @@
   padding: 0;
   padding-bottom: 30px;
   border: 1px solid $color-border;
+
+  @media (min-width: $width-medium) {
+    width: 668px;
+    margin: 0 50px;
+    padding: 0;
+  }
+
+  @media (min-width: $width-large) {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1050px;
+    height: 455px;
+    margin: 0 50px;
+  }
 }
 
 .presentations__title {
@@ -25,6 +52,22 @@
   flex-direction: row;
   align-items: center;
   margin: 25px 0;
+
+  @media (min-width: $width-medium) {
+    order: 1;
+    width: 580px;
+  }
+
+  @media (min-width: $width-large) {
+    flex-shrink: 0;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 230px;
+    margin: 50px 70px;
+    margin-bottom: 0;
+  }
 }
 
 .presentations__title-text {
@@ -34,6 +77,17 @@
   font-weight: 700;
   color: $color-black;
   text-align: left;
+
+  @media (min-width: $width-medium) {
+    order: 1;
+    width: 580px;
+  }
+
+  @media (min-width: $width-large) {
+    order: 1;
+    width: 50%;
+    flex-shrink: 0;
+  }
 }
 
 .presentations__title-icon {
@@ -56,6 +110,14 @@
   max-width: 100%;
 
   @include reset;
+
+  @media (min-width: $width-large) {
+    width: 600px;
+
+    & picture {
+      width: 100%;
+    }
+  }
 }
 
 .presentations__text {
@@ -65,34 +127,17 @@
   margin-bottom: 30px;
   font-size: 13px;
   line-height: 24px;
-}
 
-@media (min-width: $width-medium) {
-  .presentations {
-    width: auto;
-  }
-
-  .presentations__inner {
-    @include positioner-medium;
-  }
-
-  .presentations__title {
+  @media (min-width: $width-medium) {
     order: 1;
+    width: 580px;
+    margin: 0 auto;
   }
 
-  .presentations__video {
-    order: 0;
-    width: auto;
-  }
-
-  .presentations__text {
-    order: 1;
-    width: auto;
-  }
-}
-
-@media (min-width: $width-large) {
-  .presentations__inner {
-    @include positioner-large;
+  @media (min-width: $width-large) {
+    display: block;
+    width: 230px;
+    margin: 0 70px;
+    margin-top: 40px;
   }
 }

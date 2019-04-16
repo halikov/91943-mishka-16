@@ -1,0 +1,13 @@
+.field-container {
+  width: 100%;
+
+  @media (min-width: $width-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+
+    &--usermail {
+      width: 100%;
+    }
+  }
+}

@@ -1,18 +1,66 @@
 .product {
   @include width-full;
   padding: 0;
+
+  @media (min-width: $width-medium) {
+    width: 668px;
+    margin: 0 50px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .product__container {
   @include positioner-small;
   padding: 0;
   border: 1px solid $color-border;
+
+  @media (min-width: $width-medium) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $width-large) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .product__picture {
   @include width-full;
   margin-bottom: 30px;
   padding: 0;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-large) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.product__text {
+  @media (min-width: $width-medium) {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+  }
+
+  @media (min-width: $width-large) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .product__title {
@@ -45,6 +93,15 @@
 
   @include reset;
 
+  @media (min-width: $width-medium) {
+    margin-top: auto;
+  }
+
+  @media (min-width: $width-large) {
+    margin: 0;
+    padding: 0;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -76,31 +133,4 @@
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-@media (min-width: $width-medium) {
-  .product__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
-  }
-
-  .product__picture {
-    width: 50%;
-  }
-
-  .product__text {
-    width: 50%;
-  }
-}
-
-@media (min-width: $width-large) {
-  .product__picture {
-    width: 100%;
-  }
-
-  .product__text {
-    width: 100%;
-  }
 }

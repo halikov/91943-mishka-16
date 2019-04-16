@@ -7,6 +7,7 @@
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
+    padding-top: 30px;
   }
 
   @media (min-width: $width-large) {
@@ -45,7 +46,9 @@
   @include reset-ul;
 
   @media (min-width: $width-large) {
-    margin: 0 175px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 175px;
   }
 }
 

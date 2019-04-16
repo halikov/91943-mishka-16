@@ -8,11 +8,13 @@
   margin: 0 auto;
 
   @media (min-width: $width-medium) {
-    @include positioner-medium;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $width-large) {
-    @include positioner-large;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -26,9 +28,12 @@
   @media (min-width: $width-large) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @include reset;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -39,6 +44,10 @@
   padding: 0;
 
   @media (min-width: $width-large) {
+    display: flex;
     width: 316px;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
   }
 }

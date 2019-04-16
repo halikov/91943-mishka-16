@@ -2,15 +2,8 @@
   position: relative;
 
   @include reset;
-  padding-bottom: 35px;
+  padding-bottom: 10px;
   overflow: hidden;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 30px;
-    margin-top: 35px;
-  }
 }
 
 .popular__inner {
@@ -19,16 +12,20 @@
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
+    margin-bottom: 50px;
     padding-top: 30px;
   }
 
   @media (min-width: $width-large) {
     @include positioner-large;
-    padding-top: 140px;
+    height: 765px;
+    margin-bottom: 20px;
+    padding-top: 40px;
   }
 }
 
 .popular__item {
+  position: relative;
   width: 100%;
 }
 

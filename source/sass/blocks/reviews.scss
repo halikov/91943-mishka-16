@@ -1,11 +1,18 @@
 .reviews {
+  position: relative;
+
   @include reset;
   margin-top: 60px;
 
   @media (min-width: $width-medium) {
+    height: 526px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  @media (min-width: $width-large) {
+    height: 520px;
   }
 
   &::after {
@@ -90,14 +97,37 @@
 .reviews__author-name {
   font-size: 17px;
   line-height: 30px;
+  font-weight: 700;
   font-style: normal;
   color: $color-black;
+
+  @media (min-width: $width-medium) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $width-large) {
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
 .reviews__author-nickname {
+  display: block;
   font-size: 17px;
-  line-height: 25px;
+  line-height: 30px;
+  font-weight: 400;
   color: $color-basic;
+
+  @media (min-width: $width-medium) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-large) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .reviews__toggles {

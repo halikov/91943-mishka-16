@@ -27,6 +27,19 @@
     padding: 16px 20px;
     font-size: 17px;
     line-height: 16px;
+
+    @media (min-width: $width-medium) {
+      order: 1;
+      width: 580px;
+      margin: 40px auto;
+    }
+
+    @media (min-width: $width-large) {
+      width: 230px;
+      margin: 0;
+      margin-top: 50px;
+      margin-left: 70px;
+    }
   }
 
   &--popup {
@@ -52,6 +65,10 @@
       color: $color-white-30;
       background-color: $color-primary-hovered;
     }
+  }
+
+  &--form {
+    margin-top: 30px;
   }
 }
 

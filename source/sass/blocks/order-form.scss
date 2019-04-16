@@ -2,21 +2,42 @@
   width: 320px;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .order-form__inner {
-  width: 320px;
+  @include positioner-small;
+
+  @media (min-width: $width-medium) {
+    @include positioner-medium;
+    padding-top: 80px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 930px;
+    margin: 0 110px;
+  }
 }
 
 .order-form__text {
-  width: 260px;
-  margin: 0 auto;
+  @include reset;
   margin-bottom: 30px;
-  padding: 0;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $width-medium) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 675px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .order-form__container {
-  width: 260px;
+  width: 100%;
 }
