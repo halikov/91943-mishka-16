@@ -10,7 +10,8 @@
     height: 160px;
 
     .page-header__nav {
-      @include positioner-medium;
+      width: 668px;
+      margin: 0 auto;
     }
   }
 
@@ -18,7 +19,8 @@
     height: 150px;
 
     .page-header__nav {
-      @include positioner-large;
+      width: 1050px;
+      margin: 0 auto;
     }
   }
 }

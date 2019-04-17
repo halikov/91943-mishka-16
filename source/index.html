@@ -208,28 +208,35 @@
 
       <section class="contacts">
         <div class="contacts__inner">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__list">
-            <tr class="contacts__row">
-              <td class="contacts__item">e-mail:</td>
-              <td class="contacts__item-value contacts__item-value--mail">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="contacts__row">
-              <td class="contacts__item">адрес:</td>
-              <td class="contacts__item-value">г. Санкт-Перетбург,
-                ул. Большая Конюшенная, д.19/8,
-                <br>офис 101
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="contacts__map">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="наш адрес на карте города">
-          </picture>
-          <img class="contacts__map-marker" src="img/icon-map-pin.svg" alt="отметка местоположения на карте">
+
+          <div class="contacts__text-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <table class="contacts__list">
+              <tr class="contacts__row">
+                <td class="contacts__item">e-mail:</td>
+                <td class="contacts__item-value contacts__item-value--mail">info@mimimishkashop.ru</td>
+              </tr>
+              <tr class="contacts__row">
+                <td class="contacts__item">адрес:</td>
+                <td class="contacts__item-value">г. Санкт-Перетбург,
+                  ул. Большая Конюшенная, д.19/8,
+                  <br>офис 101
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="contacts__map-wrapper">
+            <div class="contacts__map">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+                  <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="наш адрес на карте города">
+                </picture>
+              <img class="contacts__map-pin" src="img/icon-map-pin.svg" alt="отметка местоположения на карте">
+            </div>
+          </div>
+
         </div>
 
         <a class="button contacts-button" href="#">Напишите нам</a>

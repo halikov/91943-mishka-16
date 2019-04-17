@@ -6,7 +6,8 @@
 }
 
 .presentations__inner {
-  @include positioner-small;
+  width: 260px;
+  margin: 0 auto;
 
   @media (min-width: $width-medium) {
     width: 100%;
@@ -33,7 +34,7 @@
 
   @media (min-width: $width-medium) {
     width: 668px;
-    margin: 0 50px;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -43,7 +44,7 @@
     flex-wrap: wrap;
     width: 1050px;
     height: 455px;
-    margin: 0 50px;
+    margin: 0 auto;
   }
 }
 

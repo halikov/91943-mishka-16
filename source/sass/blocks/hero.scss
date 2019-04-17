@@ -32,14 +32,17 @@
   align-items: center;
   height: 100%;
 
-  @include positioner-small;
+  width: 260px;
+  margin: 0 auto;
 
   @media (min-width: $width-medium) {
-    @include positioner-medium;
+    width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: $width-large) {
-    @include positioner-large;
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
@@ -73,6 +76,8 @@
 .hero__links {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

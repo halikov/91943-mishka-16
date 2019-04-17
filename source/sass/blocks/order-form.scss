@@ -1,5 +1,5 @@
 .order-form {
-  width: 320px;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -16,7 +16,7 @@
 
   @media (min-width: $width-large) {
     width: 930px;
-    margin: 0 110px;
+    margin: 0 auto;
   }
 }
 

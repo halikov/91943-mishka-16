@@ -4,7 +4,7 @@
 
   @media (min-width: $width-medium) {
     width: 668px;
-    margin: 0 50px;
+    margin: 0;
   }
 
   @media (min-width: $width-large) {
@@ -15,7 +15,8 @@
 }
 
 .product__container {
-  @include positioner-small;
+  width: 100%;
+  margin: 0;
   padding: 0;
   border: 1px solid $color-border;
 
