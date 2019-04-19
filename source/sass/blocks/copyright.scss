@@ -11,6 +11,15 @@
   padding: 10px;
   text-decoration: none;
 
+  @media (min-width: $width-medium) {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $width-large) {
+    padding-top: 5px;
+  }
+
   &:hover .copyright__icon-path {
     fill: $color-primary-hovered;
   }
@@ -27,6 +36,10 @@
   font-size: 19px;
   line-height: 18px;
   color: $color-black;
+
+  @media (min-width: $width-medium) {
+    margin-left: auto;
+  }
 }
 
 .copyright__icon {

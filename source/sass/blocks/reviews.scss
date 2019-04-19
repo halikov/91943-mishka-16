@@ -2,24 +2,31 @@
   position: relative;
 
   @include reset;
-  margin-top: 60px;
+  padding-bottom: 73px;
 
   @media (min-width: $width-medium) {
-    height: 526px;
+    // height: 526px;
+    padding-bottom: 75px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 25px;
+    background-size: 350px auto;
   }
 
   @media (min-width: $width-large) {
-    height: 520px;
+    padding-bottom: 122px;
+    background-position: 50px 30px;
   }
 
   &::after {
     content: "";
     height: 30px;
-    display: block;
+    display: none;
     margin-top: 40px;
+
+    @media (min-width: $width-medium) {
+      display: block;
+    }
   }
 }
 
@@ -27,9 +34,11 @@
   position: relative;
 
   @include positioner-small;
+  padding-top: 28px;
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
+    padding-top: 43px;
   }
 
   @media (min-width: $width-large) {
@@ -39,7 +48,7 @@
 
 .reviews__title {
   @include reset;
-  padding-bottom: 35px;
+  margin-bottom: 23px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -48,7 +57,8 @@
   @media (min-width: $width-medium) {
     display: block;
     margin-bottom: 10px;
-    padding-top: 60px;
+    margin-top: 60px;
+    margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -64,10 +74,11 @@
   width: 100%;
 
   @include reset-ul;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 
   @media (min-width: $width-medium) {
     width: 100%;
+    margin-top: 48px;
   }
 
   @media (min-width: $width-large) {
@@ -84,6 +95,10 @@
   width: auto;
 
   @include reset;
+
+  @media (min-width: $width-large) {
+    width: 770px;
+  }
 }
 
 .reviews__text {
@@ -92,6 +107,15 @@
   font-size: 15px;
   line-height: 30px;
   text-align: left;
+
+  @media (min-width: $width-medium) {
+    margin-bottom: 59px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-bottom: 39px;
+  }
 }
 
 .reviews__author-name {
@@ -119,15 +143,12 @@
   font-weight: 400;
   color: $color-basic;
 
-  @media (min-width: $width-medium) {
-    font-size: 17px;
-    line-height: 30px;
-  }
+  // @media (min-width: $width-medium) {
+  // }
 
-  @media (min-width: $width-large) {
-    font-size: 17px;
-    line-height: 30px;
-  }
+  // @media (min-width: $width-large) {
+  //   font-size: 17px
+  // }
 }
 
 .reviews__toggles {
@@ -137,13 +158,13 @@
   width: 100%;
 
   @include reset;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   border: 1px solid $color-border;
 
   @media (min-width: $width-medium) {
     position: absolute;
-    bottom: -50px;
-    right: 0;
+    bottom: -36px;
+    right: 5px;
     width: 167px;
     border: none;
 
@@ -153,6 +174,7 @@
   }
 
   @media (min-width: $width-large) {
+    right: 0;
     width: 175px;
   }
 
@@ -194,17 +216,3 @@
   }
 }
 
-.reviews__button {
-  width: 260px;
-
-  @media (min-width: $width-medium) {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 175px;
-  }
-
-  @media (min-width: $width-large) {
-    width: 175px;
-  }
-}

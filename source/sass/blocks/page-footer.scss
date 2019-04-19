@@ -5,12 +5,12 @@
   background-color: $color-background;
 
   @media (min-width: $width-medium) {
-    height: 145px;
+    margin-top: 20px;
     padding: 40px 0;
   }
 
   @media (min-width: $width-large) {
-    height: 145px;
+    margin-top: 57px;
     padding: 40px 0;
   }
 }
@@ -27,10 +27,12 @@
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
+    // padding-top: 20px;
   }
 
   @media (min-width: $width-large) {
     @include positioner-large;
+    padding-top: 6px;
   }
 }
 
@@ -50,7 +52,6 @@
 
 .page-footer__socials {
   width: 100%;
-  margin-bottom: 25px;
 
   &::after {
     content: "";
@@ -72,6 +73,7 @@
 
   @media (min-width: $width-large) {
     width: 350px;
+    margin-right: auto;
   }
 }
 
@@ -98,7 +100,7 @@
 
 .page-footer__social-item {
   margin: 0;
-  margin-right: 10px;
+  margin-right: 21px;
   font-size: 0;
 
   &:last-child {

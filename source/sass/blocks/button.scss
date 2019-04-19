@@ -22,6 +22,17 @@
     background-color: $color-basic;
   }
 
+  &--order-m {
+    padding: 9px 30px;
+
+    @media (min-width: $width-medium) {
+      width: 292px;
+      padding: 14px 30px;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+
   &--presentation {
     width: 192px;
     padding: 16px 20px;
@@ -41,6 +52,42 @@
       margin-left: 70px;
     }
   }
+
+  &--reviews {
+    width: 260px;
+    padding: 9px 30px;
+
+    @media (min-width: $width-medium) {
+      position: absolute;
+      top: 105px;
+      right: 0;
+      width: 175px;
+    }
+
+    @media (min-width: $width-large) {
+      top: 111px;
+      width: 175px;
+    }
+  }
+
+
+  &--contacts {
+    width: 260px;
+    margin: 0 auto;
+    padding: 9px 30px;
+
+    @media (min-width: $width-medium) {
+      width: 230px;
+    }
+
+    @media (min-width: $width-large) {
+      width: 230px;
+      margin: auto;
+      margin-top: 50px;
+      margin-left: 175px;
+    }
+  }
+
 
   &--popup {
     width: 260px;
@@ -69,26 +116,5 @@
 
   &--form {
     margin-top: 30px;
-  }
-}
-
-@media (min-width: $width-medium) {
-  &--presentation {
-    order: 1;
-    width: 584px;
-  }
-
-  &--order-m {
-    width: 290px;
-  }
-}
-
-@media (min-width: $width-large) {
-  &--presentation {
-    width: 230px;
-  }
-
-  &--order-m {
-    width: 290px;
   }
 }
