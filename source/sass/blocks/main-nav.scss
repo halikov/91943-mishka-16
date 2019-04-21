@@ -195,12 +195,12 @@
   @media (min-width: $width-medium) {
     width: auto;
     margin: 0;
-    padding: 26px 0 3px;
+    padding: 16px 0 30px;
     font-size: 15px;
     text-align: left;
 
     &--logo {
-      padding: 20px 0 3px;
+      padding: 13px 0 3px;
     }
 
     &--search {
@@ -210,7 +210,7 @@
     }
 
     &--basket {
-      padding: 6px 0 3px;
+      padding: 3px 0 3px;
       font-size: 17px;
       text-align: right;
     }
@@ -230,6 +230,10 @@
       padding-top: 8px;
       padding-bottom: 4px;
       text-align: center;
+    }
+
+    &--basket {
+      padding-top: 19px;
     }
 
     &--order {
@@ -257,7 +261,12 @@
   margin-right: 25px;
 
   @media (min-width: $width-medium) {
-    margin-right: 0;
+    margin-right: 28px;
+
+    &--search {
+      margin: 0;
+      margin-top: 10px;
+    }
   }
 
   @media (min-width: $width-large) {

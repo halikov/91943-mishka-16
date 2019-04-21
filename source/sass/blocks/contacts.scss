@@ -2,7 +2,7 @@
   width: auto;
 
   @include reset;
-  padding-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .contacts__inner {
@@ -13,6 +13,7 @@
     width: 100%;
 
     @include reset;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $width-large) {
@@ -25,6 +26,7 @@
 
     @include positioner-large;
     margin-top: 70px;
+    margin-bottom: 100px;
   }
 }
 

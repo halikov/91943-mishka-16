@@ -2,7 +2,7 @@
   width: auto;
 
   @include reset;
-  margin-bottom: 55px;
+  margin-bottom: 58px;
 }
 
 .presentations__inner {
@@ -12,13 +12,15 @@
   @media (min-width: $width-medium) {
     width: 100%;
     margin: 0;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $width-large) {
     width: 100%;
 
     @include reset;
-    margin-top: 50px;
+    margin-top: 56px;
+    margin-bottom: 105px;
   }
 }
 
@@ -29,13 +31,14 @@
 
   width: auto;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   border: 1px solid $color-border;
 
   @media (min-width: $width-medium) {
     width: 668px;
     margin: 0 auto;
     padding: 0;
+    padding-bottom: 11px;
   }
 
   @media (min-width: $width-large) {
@@ -52,11 +55,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 25px 0;
+  margin: 23px 33px;
 
   @media (min-width: $width-medium) {
     order: 1;
     width: 580px;
+    padding-top: 11px;
   }
 
   @media (min-width: $width-large) {
@@ -66,7 +70,8 @@
     flex-direction: column;
     align-items: flex-start;
     width: 230px;
-    margin: 50px 70px;
+    margin: 30px 70px;
+    margin-left: 78px;
     margin-bottom: 0;
   }
 }
@@ -82,12 +87,14 @@
   @media (min-width: $width-medium) {
     order: 1;
     width: 580px;
+    font-size: 20px;
   }
 
   @media (min-width: $width-large) {
     order: 1;
     width: 50%;
     flex-shrink: 0;
+    font-size: 20px;
   }
 }
 
@@ -96,11 +103,21 @@
   width: 35px;
   height: 25px;
   margin-right: 25px;
+  margin-bottom: 11px;
+
+  @media (min-width: $width-medium) {
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+  }
+
+  @media (min-width: $width-large) {
+    margin-bottom: 28px;
+  }
 }
 
 .presentations__icon {
   width: 32px;
-  height: 23px;
 }
 
 .presentations__icon-path {
@@ -111,9 +128,14 @@
   max-width: 100%;
 
   @include reset;
+  margin-bottom: 30px;
+
+  @media (min-width: $width-medium) {
+    margin-bottom: 3px;
+  }
 
   @media (min-width: $width-large) {
-    width: 600px;
+    width: 682px;
 
     & picture {
       width: 100%;
@@ -122,10 +144,10 @@
 }
 
 .presentations__text {
-  width: 205px;
+  width: 190px;
 
   @include reset;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
 
@@ -133,12 +155,19 @@
     order: 1;
     width: 580px;
     margin: 0 auto;
+    margin-top: 8px;
+    margin-left: 39px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   @media (min-width: $width-large) {
     display: block;
     width: 230px;
     margin: 0 70px;
-    margin-top: 40px;
+    margin-top: 34px;
+    margin-left: 77px;
+    font-size: 15px;
+    line-height: 30px;
   }
 }

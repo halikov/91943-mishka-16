@@ -1,13 +1,13 @@
 .order-form {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 50px;
+
+  @include reset;
+  margin-bottom: 55px;
 }
 
 .order-form__inner {
   @include positioner-small;
+  padding-top: 23px;
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
@@ -22,7 +22,7 @@
 
 .order-form__text {
   @include reset;
-  margin-bottom: 30px;
+  margin-bottom: 14px;
   font-size: 13px;
   line-height: 24px;
 

@@ -1,7 +1,7 @@
 .page-footer {
   width: auto;
-  min-height: 160px;
-  padding: 25px 0;
+  // min-height: 160px;
+  padding: 30px 0;
   background-color: $color-background;
 
   @media (min-width: $width-medium) {
@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $width-large) {
-    margin-top: 57px;
-    padding: 40px 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -32,7 +32,7 @@
 
   @media (min-width: $width-large) {
     @include positioner-large;
-    padding-top: 6px;
+    padding: 45px 0 44px;
   }
 }
 
