@@ -2,6 +2,14 @@
   width: 100%;
   margin-top: 30px;
   padding: 0;
+
+  @media (min-width: $width-medium) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-top: 126px;
+  }
 }
 
 .catalog__inner {
@@ -10,12 +18,10 @@
   @media (min-width: $width-medium) {
     margin: 0;
     padding: 0;
-    padding-top: 50px;
   }
 
   @media (min-width: $width-large) {
     margin: 0;
-    margin-top: 126px;
     padding: 0;
   }
 }

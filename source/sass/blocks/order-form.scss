@@ -2,12 +2,12 @@
   width: 100%;
 
   @include reset;
+  margin-top: 25px;
   margin-bottom: 55px;
 }
 
 .order-form__inner {
   @include positioner-small;
-  padding-top: 23px;
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
