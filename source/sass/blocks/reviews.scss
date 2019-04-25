@@ -1,32 +1,21 @@
 .reviews {
-  position: relative;
-
   @include reset;
   padding-bottom: 73px;
 
   @media (min-width: $width-medium) {
-    // height: 526px;
-    padding-bottom: 75px;
+    position: relative;
+    padding: 77px 0;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 25px;
+    background-position: 0 0;
     background-size: 350px auto;
   }
 
   @media (min-width: $width-large) {
+    margin-bottom: 138px;
+    padding-top: 70px;
     padding-bottom: 122px;
-    background-position: 50px 30px;
-  }
-
-  &::after {
-    content: "";
-    height: 30px;
-    display: none;
-    margin-top: 40px;
-
-    @media (min-width: $width-medium) {
-      display: block;
-    }
+    background-position: 50px 0;
   }
 }
 
@@ -34,11 +23,9 @@
   position: relative;
 
   @include positioner-small;
-  padding-top: 28px;
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
-    padding-top: 43px;
   }
 
   @media (min-width: $width-large) {
@@ -57,7 +44,6 @@
   @media (min-width: $width-medium) {
     display: block;
     margin-bottom: 10px;
-    margin-top: 60px;
     margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
@@ -78,6 +64,7 @@
 
   @media (min-width: $width-medium) {
     width: 100%;
+    margin: 0;
     margin-top: 48px;
   }
 

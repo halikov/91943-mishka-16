@@ -112,13 +112,14 @@
   align-items: flex-start;
 
   @media (min-width: $width-medium) {
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+    padding-right: 375px;
   }
 
   @media (min-width: $width-large) {
     width: 100%;
-    flex-direction: column;
+    padding-right: 580px;
   }
 }
 
@@ -128,9 +129,7 @@
   padding: 0;
 
   @media (min-width: $width-medium) {
-    width: 50%;
     margin-bottom: 20px;
-    padding-right: 40px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -152,7 +151,7 @@
   border-spacing: 0;
 
   @media (min-width: $width-medium) {
-    width: 50%;
+    // width: 50%;
     margin-bottom: 54px;
   }
 
@@ -181,6 +180,7 @@
 }
 
 .popular__picture {
+  display: block;
   width: 260px;
   margin: 0;
   margin-bottom: 18px;
@@ -189,9 +189,10 @@
 
   @media (min-width: $width-medium) {
     position: absolute;
-    top: 7px;
+    bottom: 0;
     right: 0;
     width: 334px;
+    margin: 0;
   }
 
   @media (min-width: $width-large) {
@@ -211,7 +212,7 @@
   text-align: center;
 
   @media (min-width: $width-medium) {
-    width: 50%;
+    // width: 50%;
     text-align: left;
   }
 
