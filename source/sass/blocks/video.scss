@@ -3,6 +3,12 @@
   display: block;
 }
 
+.video__link {
+  & img {
+    display: block;
+  }
+}
+
 .video__button {
   position: absolute;
   top: 50%;

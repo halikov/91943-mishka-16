@@ -2,33 +2,33 @@
   position: relative;
 
   @include reset;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   overflow: hidden;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 30px;
-    margin-top: 35px;
-  }
 }
 
 .popular__inner {
-  @include reset;
-  @include positioner-small;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 27px;
 
   @media (min-width: $width-medium) {
-    @include positioner-medium;
-    padding-top: 30px;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 46px;
   }
 
   @media (min-width: $width-large) {
-    @include positioner-large;
-    padding-top: 140px;
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    padding-top: 45px;
   }
 }
 
 .popular__item {
+  position: relative;
   width: 100%;
 }
 
@@ -43,18 +43,20 @@
     align-items: center;
     width: auto;
     height: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $width-large) {
-    z-index: 2;
+    justify-content: space-around;
     width: 700px;
+    margin-top: 78px;
+    margin-bottom: 56px;
   }
 }
 
 .popular__title {
   @include reset;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -67,7 +69,9 @@
   }
 
   @media (min-width: $width-large) {
+    z-index: 2;
     order: 1;
+    padding-left: 20px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -77,7 +81,7 @@
   display: block;
 
   @include reset;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -93,6 +97,8 @@
   @media (min-width: $width-large) {
     width: 100px;
     margin: 0;
+    margin-left: auto;
+    padding-top: 10px;
     line-height: 17px;
   }
 }
@@ -100,17 +106,20 @@
 .popular__text {
   position: relative;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 
   @media (min-width: $width-medium) {
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+    padding-right: 375px;
   }
 
   @media (min-width: $width-large) {
-    z-index: -1;
     width: 100%;
-    flex-direction: column;
+    padding-right: 580px;
   }
 }
 
@@ -120,12 +129,14 @@
   padding: 0;
 
   @media (min-width: $width-medium) {
-    width: 50%;
-    padding-right: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $width-large) {
     width: 350px;
+    margin-bottom: 32px;
     margin-left: 175px;
     padding-right: 54px;
   }
@@ -133,23 +144,29 @@
 
 .popular__parameters {
   @include width-full;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 28px;
   padding: 0;
+  line-height: 20px;
+  border-spacing: 0;
 
   @media (min-width: $width-medium) {
-    width: 50%;
+    // width: 50%;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $width-large) {
     width: 350px;
     margin-left: 175px;
+    margin-bottom: 108px;
     padding-right: 54px;
   }
 }
 
 .popular__option {
+  width: 97px;
   padding: 10px 0;
+  padding-right: 13px;
   line-height: 20px;
   text-align: left;
   border-bottom: 1px solid $color-border;
@@ -163,20 +180,23 @@
 }
 
 .popular__picture {
+  display: block;
   width: 260px;
   margin: 0;
+  margin-bottom: 18px;
   padding: 0;
   text-align: center;
 
   @media (min-width: $width-medium) {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     width: 334px;
+    margin: 0;
   }
 
   @media (min-width: $width-large) {
-    top: -70px;
+    top: -157px;
     width: 525px;
   }
 }
@@ -192,7 +212,8 @@
   text-align: center;
 
   @media (min-width: $width-medium) {
-    width: 50%;
+    // width: 50%;
+    text-align: left;
   }
 
   @media (min-width: $width-large) {
@@ -204,8 +225,16 @@
 
 .popular__price {
   display: block;
-  padding: 25px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: $width-medium) {
+    margin: 0;
+    margin-left: 70px;
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

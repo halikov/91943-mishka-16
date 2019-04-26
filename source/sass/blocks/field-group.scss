@@ -1,11 +1,31 @@
 .field-group {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 
   @include reset;
+  margin-bottom: 20px;
   border: none;
   overflow: hidden;
+
+  &--usermail {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-medium) {
+    padding: 45px 0;
+
+    &:nth-child(2n) {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+.field-group__inner {
+  width: 100%;
+
+  @media (min-width: $width-medium) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .field-group__title {
@@ -15,20 +35,38 @@
 
   @include reset;
   margin-bottom: 25px;
-  font-family: "OpenSansBold", "Arial", sans-serif;
+  padding-top: 10px;
   font-size: 17px;
   line-height: 16px;
+  font-weight: 700;
   color: $color-primary;
   text-transform: uppercase;
+
+  &--username {
+    margin-top: 2px;
+    margin-bottom: 18px;
+  }
+
+  &--usermale {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-medium) {
+    width: 20%;
+  }
 
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 18px;
     right: 0;
     display: block;
     width: 190px;
     height: 1px;
     background-color: $color-primary;
+
+    @media (min-width: $width-medium) {
+      display: none;
+    }
   }
 }

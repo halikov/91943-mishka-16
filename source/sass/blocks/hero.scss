@@ -1,15 +1,43 @@
 .hero {
-  height: 175px;
+  position: relative;
+  z-index: 0;
+  // height: 175px;
 
-  @include reset;
+  margin: 0;
+  padding: 71px 0;
   background-color: $color-background;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center -20px;
 
   &--bg-image {
-    position: relative;
-    height: 484px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 488px;
     background-image: url("../img/hero-mobile@1x.jpg");
+
+    @media (min-width: $width-medium) {
+      height: 745px;
+      border-top: 1px solid $color-border;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: 50% 1px;
+    }
+
+    @media (min-width: $width-large) {
+      height: 745px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $width-medium) {
+    margin-top: -70px;
+    padding: 65px 0 75px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-top: -60px;
+    padding-bottom: 100px;
   }
 }
 
@@ -19,22 +47,23 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-
-  @include positioner-small;
-  outline: 2px dotted rgb(247, 238, 231);
+  margin: 0 auto;
+  margin-bottom: auto;
 
   @media (min-width: $width-medium) {
-    @include positioner-medium;
+    width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: $width-large) {
-    @include positioner-large;
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .hero__title {
-  padding: 10px;
-  padding-top: 80px;
+  margin: auto;
+  padding: 0;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -42,7 +71,8 @@
   color: $color-black;
 
   @media (min-width: $width-medium) {
-    width: 500px;
+    width: 520px;
+    margin-top: 30px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -52,28 +82,69 @@
     font-size: 53px;
     line-height: 57px;
   }
+
+  &--home-page {
+    width: 220px;
+    margin-top: 0;
+
+    @media (min-width: $width-medium) {
+      width: 600px;
+      margin-top: 87px;
+    }
+
+    @media (min-width: $width-large) {
+      width: 650px;
+      margin-top: 87px;
+    }
+  }
 }
 
 .hero__links {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media (min-width: $width-medium) {
+    bottom: -5px;
+    width: 668px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $width-large) {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .hero__link {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 260px;
+  align-items: center;
+  width: 100%;
   height: 103px;
   padding: 19px 30px;
   text-decoration: none;
   cursor: pointer;
+
+  @media (min-width: $width-medium) {
+    width: 50%;
+    height: 125px;
+    padding: 27px 35px 35px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 50%;
+  }
 
   &--interior {
     background-color: $color-primary;
@@ -98,14 +169,6 @@
       background-color: $color-complementary-hovered;
     }
   }
-
-  @media (min-width: $width-medium) {
-    width: 50%;
-  }
-
-  @media (min-width: $width-large) {
-    width: 50%;
-  }
 }
 
 .hero__link-text {
@@ -116,6 +179,16 @@
   font-weight: 700;
   color: $color-white;
   text-align: left;
+
+  @media (min-width: $width-medium) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-large) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .hero__link-icon {
@@ -135,5 +208,27 @@
     width: 60px;
     height: 60px;
     background-image: url("../img/icon-toy.svg");
+  }
+}
+
+.hero__zigzag {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 34px;
+  left: 0;
+  bottom: -10px;
+  background-repeat: repeat-x;
+  background-position: 0 5px;
+
+  @media (min-width: $width-medium) {
+    bottom: -18px;
+    background-image: url("../img/bg-zigzag-fill-min.svg");
+  }
+
+  @media (min-width: $width-large) {
+    bottom: -10px;
+    background-image: url("../img/bg-zigzag-fill-min.svg");
   }
 }
