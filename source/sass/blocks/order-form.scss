@@ -2,7 +2,7 @@
   width: 100%;
 
   @include reset;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 55px;
 }
 
@@ -11,7 +11,6 @@
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
-    padding-top: 80px;
   }
 
   @media (min-width: $width-large) {
@@ -22,12 +21,14 @@
 
 .order-form__text {
   @include reset;
-  margin-bottom: 14px;
+
   font-size: 13px;
   line-height: 24px;
 
   @media (min-width: $width-medium) {
     margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $width-large) {
@@ -40,4 +41,5 @@
 
 .order-form__container {
   width: 100%;
+  margin-top: 24px;
 }

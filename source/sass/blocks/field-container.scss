@@ -1,10 +1,12 @@
 .field-container {
   width: 100%;
+  margin-top: 25px;
 
   @media (min-width: $width-medium) {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
+    padding-left: 30px;
 
     &--usermail {
       width: 100%;

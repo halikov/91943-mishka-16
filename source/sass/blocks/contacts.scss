@@ -2,17 +2,20 @@
   width: auto;
 
   @include reset;
-  margin-bottom: 39px;
+  margin-top: 30px;
 
   @media (min-width: $width-medium) {
     margin: 0;
-    margin-top: 68px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-top: 65px;
   }
 }
 
 .contacts__inner {
   width: 100%;
-  padding-top: 13px;
 
   @media (min-width: $width-medium) {
     width: 100%;
@@ -21,15 +24,10 @@
   }
 
   @media (min-width: $width-large) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 460px;
+    position: relative;
 
     @include positioner-large;
-    margin-top: 70px;
+    padding-right: 575px;
   }
 }
 
@@ -38,23 +36,21 @@
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
-    padding-top: 33px;
   }
 
   @media (min-width: $width-large) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: auto;
     margin: 0;
     margin-top: 20px;
-    padding-right: 50px;
   }
 }
 
 .contacts__title {
   @include reset;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -62,7 +58,7 @@
 
   @media (min-width: $width-medium) {
     margin-left: -5px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
     padding: 15px 0;
     font-size: 43px;
     line-height: 50px;
@@ -73,10 +69,11 @@
   }
 
   @media (min-width: $width-large) {
+    margin-top: 55px;
+    margin-bottom: 36px;
     padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
-
     background-position: 67px 7px;
   }
 }
@@ -96,6 +93,7 @@
     & tbody {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       align-items: flex-start;
     }
 
@@ -104,12 +102,12 @@
   }
 
   @media (min-width: $width-large) {
-    width: 300px;
-    margin-left: auto;
+    width: auto;
+    margin-left: 175px;
 
-    & tbody {
-      flex-direction: column;
-    }
+    // & tbody {
+    //   flex-direction: column;
+    // }
   }
 }
 
@@ -138,6 +136,10 @@
   padding-right: 30px;
   vertical-align: top;
   box-sizing: border-box;
+
+  @media (min-width: $width-medium) {
+    padding-right: 25px;
+  }
 }
 
 .contacts__item-value {
@@ -175,8 +177,12 @@
   }
 
   @media (min-width: $width-large) {
-    order: 1;
-    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 525px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -194,11 +200,7 @@
   }
 
   @media (min-width: $width-large) {
-    position: absolute;
-    top: -30px;
-    right: 0;
     width: 100%;
-    height: 455px;
     margin: 0;
   }
 }
