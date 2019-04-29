@@ -2,12 +2,19 @@
   width: 100%;
 
   @include reset;
-  margin-bottom: 28px;
+  margin-top: 23px;
   border: none;
-  overflow: hidden;
+
+  &--checkbox {
+    margin-top: 33px;
+  }
+
+  &--username {
+    margin-top: 30px;
+  }
 
   &--usermail {
-    margin-bottom: 0;
+    margin-top: 33px;
   }
 
   @media (min-width: $width-medium) {
@@ -22,8 +29,6 @@
 
   @media (min-width: $width-medium) {
     position: relative;
-    // display: flex;
-    // align-items: flex-start;
   }
 }
 

@@ -1,6 +1,14 @@
 .field-container {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 32px;
+
+  &--checkbox {
+    margin-top: 26px;
+  }
+
+  &--usermail {
+    margin-top: 5px;
+  }
 
   @media (min-width: $width-medium) {
     display: flex;
