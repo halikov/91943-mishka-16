@@ -5,6 +5,10 @@
   margin-top: 23px;
   border: none;
 
+  &--radio {
+    margin-top: 0;
+  }
+
   &--checkbox {
     margin-top: 33px;
 
@@ -12,6 +16,10 @@
       margin-top: 50px;
       padding: 50px 0;
       background-color: $color-background;
+    }
+
+    @media (min-width: $width-large) {
+      padding-bottom: 25px;
     }
   }
 
@@ -24,18 +32,28 @@
   }
 
   &--usermail {
-    margin-top: 27px;
+    margin-top: 32px;
 
     @media (min-width: $width-medium) {
       margin-top: 50px;
       padding: 45px 0;
       background-color: $color-background;
     }
+
+    @media (min-width: $width-large) {
+      padding-bottom: 50px;
+    }
   }
 
   &--textarea {
+    margin-top: 30px;
+
     @media (min-width: $width-medium) {
       margin-top: 56px;
+    }
+
+    @media (min-width: $width-large) {
+      margin-top: 52px;
     }
   }
 }
@@ -90,6 +108,11 @@
     @media (min-width: $width-medium) {
       top: 21px;
       left: -164px;
+    }
+
+    @media (min-width: $width-large) {
+      left: -114px;
+      padding-bottom: 50px;
     }
   }
 

@@ -125,5 +125,10 @@
       margin-left: 50px;
       padding: 9px 25px;
     }
+
+    @media (min-width: $width-large) {
+      margin-top: 50px;
+      margin-left: 225px;
+    }
   }
 }
