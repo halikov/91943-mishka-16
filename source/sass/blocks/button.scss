@@ -115,7 +115,15 @@
   }
 
   &--form {
+    margin: 0 auto;
     margin-top: 30px;
     padding: 9px 30px;
+
+    @media (min-width: $width-medium) {
+      width: 230px;
+      margin-top: 53px;
+      margin-left: 50px;
+      padding: 9px 25px;
+    }
   }
 }

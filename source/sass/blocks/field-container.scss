@@ -13,8 +13,12 @@
   @media (min-width: $width-medium) {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    padding-left: 30px;
+    margin-top: 0;
+
+    &--checkbox {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
 
     &--usermail {
       width: 100%;

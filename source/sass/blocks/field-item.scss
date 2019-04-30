@@ -8,29 +8,49 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $width-medium) {
+    margin-top: 13px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
   &--checkbox {
     margin-bottom: 21px;
+
+    @media (min-width: $width-medium) {
+      width: 238px;
+      margin: 0;
+      margin-bottom: 25px;
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &--username {
     margin-top: 20px;
-  }
 
-  &--usermale {
-    margin-bottom: 0;
-
-    &:nth-child(2) {
-      margin-top: 32px;
+    @media (min-width: $width-medium) {
+      margin-top: 11px;
     }
   }
 
-  // @media (min-width: $width-medium) {
-  // }
+  &--usermail {
+    margin-bottom: 0;
 
-  // @media (min-width: $width-large) {
-  //   &--checkbox {
-  //   }
-  // }
+    &:nth-child(2) {
+      margin-top: 22px;
+    }
+
+    @media (min-width: $width-medium) {
+      position: relative;
+      // margin-top: 13px;
+    }
+  }
 
   &:hover .field-item__checker {
     border-color: $color-primary-hovered;
@@ -45,6 +65,7 @@
 
     @media (min-width: $width-medium) {
       display: flex;
+      margin-top: 0;
     }
   }
 }
@@ -69,12 +90,17 @@
   font-weight: 700;
   color: $color-black;
 
-  // @media (min-width: $width-medium) {
-  //   font-size: 19px;
+  @media (min-width: $width-medium) {
+    width: auto;
+    margin-right: 20px;
+    font-size: 19px;
+  }
 
-  //   &--username {
-  //   }
-  // }
+  &--username {
+    @media (min-width: $width-medium) {
+      margin-right: 25px;
+    }
+  }
 
   @media (min-width: $width-large) {
     font-size: 19px;
@@ -84,8 +110,12 @@
 .field-item__input-wrapper {
   position: relative;
   width: 100%;
-  margin-top: 7px;
-  border-bottom: 2px solid $color-black;
+
+  @media (min-width: $width-medium) {
+    & .field-item__input {
+      width: 100%;
+    }
+  }
 }
 
 .field-item__icon {
@@ -103,6 +133,11 @@
     width: 25px;
     height: 24px;
     background-image: url("../img/icon-phone.svg");
+
+    @media (min-width: $width-medium) {
+      top: 16px;
+      right: 26px;
+    }
   }
 
   &--env {
@@ -110,6 +145,11 @@
     width: 32px;
     height: 28px;
     background-image: url("../img/icon-mail.svg");
+
+    @media (min-width: $width-medium) {
+      top: 15px;
+      right: 22px;
+    }
   }
 }
 
@@ -123,10 +163,20 @@
     padding-right: 45px;
     font-size: 17px;
     line-height: 18px;
+    border-bottom: 2px solid $color-black;
+
+    @media (min-width: $width-medium) {
+      padding-bottom: 18px;
+      padding-left: 20px;
+      font-size: 19px;
+    }
   }
 
-  // @media (min-width: $width-medium) {
-  // }
+  @media (min-width: $width-medium) {
+    width: auto;
+    flex-grow: 1;
+    padding-left: 20px;
+  }
 
   &:checked + .field-item__checker--radio::after {
     display: block;
@@ -134,7 +184,7 @@
 
   &:checked + .field-item__checker--checkbox {
     background-image: url("../img/icon-tick.svg");
-    background-size: 21px;
+    background-size: 33px 22px;
   }
 }
 
@@ -153,6 +203,7 @@
   @media (min-width: $width-medium) {
     width: 52px;
     height: 52px;
+    margin-right: 28px;
   }
 
   &--radio {
@@ -176,9 +227,13 @@
 .field-item__textarea {
   width: 100%;
   height: 142px;
-  margin-top: 25px;
+  margin: 0;
   padding: 15px;
   border: 2px solid $color-basic;
+
+  @media (min-width: $width-medium) {
+    font-size: 19px;
+  }
 }
 
 .field-item__require-text {
@@ -189,7 +244,9 @@
 
   @media (min-width: $width-medium) {
     position: absolute;
-    bottom: 25px;
-    right: 0;
+    bottom: 14px;
+    right: 50px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

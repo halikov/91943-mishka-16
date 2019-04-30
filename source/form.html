@@ -112,9 +112,10 @@
       </section>
 
       <section class="order-form">
-        <div class="order-form__inner">
+        <div class="order-form__text-wrapper">
           <h2 class="visually-hidden">Форма заказа</h2>
           <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
 
           <div class="order-form__container">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -145,7 +146,7 @@
               </fieldset>
 
               <fieldset class="field-group field-group--checkbox">
-                <div class="field-group__inner">
+                <div class="field-group__inner field-group__inner--checkbox">
                   <legend class="field-group__title">Цвет</legend>
 
                   <div class="field-container field-container--checkbox">
@@ -227,8 +228,8 @@
                       </label>
                     </div>
                   </div>
-                </div>
 
+                </div>
               </fieldset>
 
               <fieldset class="field-group field-group--usermail">
@@ -236,9 +237,9 @@
                   <legend class="visually-hidden">Позвонить или написать нам</legend>
 
                   <div class="field-container field-container--usermail">
-                      <div class="field-item field-item--usermale">
+                      <div class="field-item field-item--usermail">
+                        <span class="field-group__title field-group__title--usermail">Тел</span>
                         <label class="field-item__block" for="user-tel">
-                          <span class="field-group__title field-group__title--usermale">Тел</span>
                           <div class="field-item__input-wrapper">
                             <span class="field-item__icon field-item__icon--tel"></span>
                             <input class="field-item__input" id="user-tel" type="text" placeholder="+7 XXX XXX XX XX*">
@@ -246,21 +247,24 @@
                         </label>
                       </div>
 
-                      <div class="field-item field-item--usermale">
+                      <div class="field-item field-item--usermail">
+                        <span class="field-group__title field-group__title--usermail">E-Mail</span>
                         <label class="field-item__block" for="email">
-                          <span class="field-group__title field-group__title--usermale">E-Mail</span>
                           <div class="field-item__input-wrapper">
                             <span class="field-item__icon field-item__icon--env"></span>
                             <input class="field-item__input" id="email" type="text" placeholder="Ваш Email*">
                           </div>
                         </label>
                       </div>
-
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="field-group field-group--textarea">
+                <div class="field-group__inner">
+                  <div class="field-group__container">
                       <div class="field-item field-item--textarea">
-                        <label class="field-item__block" for="add-wishes">
-                          <span class="field-group__title">Доп</span>
-                        </label>
-                          <textarea class="field-item__textarea"  id="add-wishes" name="add-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                        <span class="field-group__title">Доп</span>
+                        <textarea class="field-item__textarea"  id="add-wishes" name="add-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                       </div>
                   </div>
                 </div>
@@ -270,7 +274,6 @@
               <button class="button button--form">отправить заказ</button>
             </form>
           </div>
-        </div>
       </section>
 
     </main>

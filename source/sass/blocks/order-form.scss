@@ -4,9 +4,17 @@
   @include reset;
   margin-top: 26px;
   margin-bottom: 55px;
+
+  @media (min-width: $width-medium) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: $width-large) {
+    margin-top: 121px;
+  }
 }
 
-.order-form__inner {
+.order-form__text-wrapper {
   @include positioner-small;
 
   @media (min-width: $width-medium) {
@@ -14,8 +22,9 @@
   }
 
   @media (min-width: $width-large) {
-    width: 930px;
+    width: 1050px;
     margin: 0 auto;
+    padding-left: 175px;
   }
 }
 
@@ -26,14 +35,12 @@
   line-height: 24px;
 
   @media (min-width: $width-medium) {
-    margin-bottom: 50px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $width-large) {
     width: 675px;
-    margin: 0 auto;
     font-size: 17px;
     line-height: 30px;
   }
@@ -42,4 +49,8 @@
 .order-form__container {
   width: 100%;
   margin-top: 24px;
+
+  @media (min-width: $width-medium) {
+    margin-top: 57px;
+  }
 }

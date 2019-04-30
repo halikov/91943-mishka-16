@@ -7,28 +7,53 @@
 
   &--checkbox {
     margin-top: 33px;
+
+    @media (min-width: $width-medium) {
+      margin-top: 50px;
+      padding: 50px 0;
+      background-color: $color-background;
+    }
   }
 
   &--username {
     margin-top: 30px;
+
+    @media (min-width: $width-medium) {
+      margin-top: 45px;
+    }
   }
 
   &--usermail {
-    margin-top: 33px;
+    margin-top: 27px;
+
+    @media (min-width: $width-medium) {
+      margin-top: 50px;
+      padding: 45px 0;
+      background-color: $color-background;
+    }
   }
 
-  @media (min-width: $width-medium) {
-    &:nth-child(2n) {
-      background-color: #f1f1f1;
+  &--textarea {
+    @media (min-width: $width-medium) {
+      margin-top: 56px;
     }
   }
 }
 
 .field-group__inner {
-  width: 100%;
+  @include positioner-small;
 
   @media (min-width: $width-medium) {
     position: relative;
+
+    @include positioner-medium;
+    padding-left: 167px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
   }
 }
 
@@ -44,19 +69,28 @@
   color: $color-primary;
   text-transform: uppercase;
 
-  // &--username {
-  // margin-bottom: 18px;
-  // }
-
-  &--usermale {
-    margin-bottom: 0;
-  }
-
   @media (min-width: $width-medium) {
     position: absolute;
-    top: 0;
+    top: 18px;
     left: 0;
     width: 20%;
+  }
+
+  @media (min-width: $width-large) {
+    left: 64px;
+  }
+
+  &--username {
+    @media (min-width: $width-medium) {
+      top: 21px;
+    }
+  }
+
+  &--usermail {
+    @media (min-width: $width-medium) {
+      top: 21px;
+      left: -164px;
+    }
   }
 
   &::after {
