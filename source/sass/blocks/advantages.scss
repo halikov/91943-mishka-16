@@ -1,29 +1,26 @@
 .advantages {
   @include reset;
 
-  margin-bottom: 57px;
+  margin-top: 25px;
 
   @media (min-width: $width-medium) {
-    margin-bottom: 85px;
+    margin-top: 35px;
   }
 
   @media (min-width: $width-large) {
-    margin-bottom: 90px;
+    margin-top: 57px;
   }
 }
 
 .advantages__inner {
   @include positioner-small;
-  padding-top: 40px;
 
   @media (min-width: $width-medium) {
     @include positioner-medium;
-    padding-top: 38px;
   }
 
   @media (min-width: $width-large) {
     @include positioner-large;
-    padding-top: 35px;
   }
 }
 

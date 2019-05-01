@@ -59,7 +59,7 @@
 
     @media (min-width: $width-medium) {
       position: absolute;
-      top: 0;
+      top: 79px;
       right: 0;
       width: 175px;
     }
@@ -74,6 +74,7 @@
   &--contacts {
     width: 260px;
     margin: 0 auto;
+    margin-top: 38px;
     padding: 9px 30px;
 
     @media (min-width: $width-medium) {
@@ -83,7 +84,7 @@
     @media (min-width: $width-large) {
       width: 230px;
       margin: auto;
-      margin-top: 50px;
+      margin-top: 80px;
       margin-left: 175px;
     }
   }
@@ -115,7 +116,20 @@
   }
 
   &--form {
+    margin: 0 auto;
     margin-top: 30px;
     padding: 9px 30px;
+
+    @media (min-width: $width-medium) {
+      width: 230px;
+      margin-top: 53px;
+      margin-left: 50px;
+      padding: 9px 25px;
+    }
+
+    @media (min-width: $width-large) {
+      margin-top: 50px;
+      margin-left: 225px;
+    }
   }
 }

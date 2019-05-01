@@ -1,13 +1,39 @@
 .field-container {
   width: 100%;
+  margin-top: 32px;
 
   @media (min-width: $width-medium) {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    margin-top: 0;
+  }
 
-    &--usermail {
+  @media (min-width: $width-large) {
+    width: 700px;
+  }
+
+  &--checkbox {
+    margin-top: 26px;
+
+    @media (min-width: $width-medium) {
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 0;
+    }
+
+    @media (min-width: $width-large) {
+      justify-content: space-between;
+      width: 735px;
+      margin-top: 0;
+    }
+  }
+
+  &--usermail {
+    margin-top: 0;
+
+    @media (min-width: $width-medium) {
       width: 100%;
+      margin-top: 0;
     }
   }
 }
