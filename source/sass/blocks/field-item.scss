@@ -47,12 +47,16 @@
     margin-bottom: 0;
 
     &:nth-child(2) {
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     @media (min-width: $width-medium) {
       position: relative;
       width: 700px;
+
+      &:nth-child(2) {
+        margin-top: 22px;
+      }
     }
 
     @media (min-width: $width-large) {

@@ -166,8 +166,8 @@
   height: 460px;
 
   @include reset;
-  margin-top: 10px;
-  margin-bottom: 35px;
+  margin-top: 40px;
+  // margin-bottom: 35px;
   text-align: center;
 
   @media (min-width: $width-medium) {
