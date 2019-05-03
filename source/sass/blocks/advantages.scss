@@ -46,37 +46,6 @@
   }
 }
 
-// .advantages__list-wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: flex-start;
-//   width: 100%;
-//
-//   @include reset-ul;
-//
-//   @media (min-width: $width-large) {
-//     width: 655px;
-//     margin-right: 50px;
-//     margin-left: 175px;
-//   }
-// }
-//
-// .advantages__item-group {
-//   width: 100%;
-//
-//   @include reset;
-//
-//   @media (min-width: $width-medium) {
-//     width: 50%;
-//   }
-//
-//   @media (min-width: $width-large) {
-//     width: 300px;
-//   }
-// }
-
 .advantages__list {
   display: flex;
   flex-direction: row;
@@ -157,45 +126,52 @@
   top: 0;
   content: "";
   display: block;
-  width: 60px;
-  height: 40px;
+  // width: 60px;
+  // height: 40px;
 
   @include reset;
-  margin-bottom: 14px;
-  background-repeat: no-repeat;
-  background-position: 0;
+  fill: $color-primary;
+  // margin-bottom: 14px;
+  // background-repeat: no-repeat;
+  // background-position: 0;
 
-  @media (min-width: $width-medium) {
-    // margin-bottom: 13px;
-  }
+  // @media (min-width: $width-medium) {
+  //   // margin-bottom: 13px;
+  // }
 
-  @media (min-width: $width-large) {
-    margin-bottom: 0;
-  }
+  // @media (min-width: $width-large) {
+  //   margin-bottom: 0;
+  // }
 
-  &--flower {
-    background-image: url("../img/icon-feature-flower.svg");
-  }
+  // &--flower {
+  //   // background-image: url("../img/icon-feature-flower.svg");
+  //   fill: $color-primary;
+  // }
 
-  &--money {
-    background-image: url("../img/icon-feature-money.svg");
-  }
+  // &--money {
+  //   // background-image: url("../img/icon-feature-money.svg");
+  //   fill: $color-primary;
+  // }
 
-  &--heart {
-    background-image: url("../img/icon-feature-heart.svg");
-  }
+  // &--heart {
+  //   // background-image: url("../img/icon-feature-heart.svg");
+  //   fill: $color-primary;
+  // }
 
-  &--ball {
-    background-image: url("../img/icon-feature-ball.svg");
-  }
+  // &--ball {
+  //   // background-image: url("../img/icon-feature-ball.svg");
+  //   fill: $color-primary;
+  // }
 
-  &--rocket {
-    background-image: url("../img/icon-feature-rocket.svg");
-  }
+  // &--rocket {
+  //   // background-image: url("../img/icon-feature-rocket.svg");
+  //   fill: $color-primary;
+  // }
 
-  &--gift {
-    background-image: url("../img/icon-feature-gift.svg");
-  }
+  // &--gift {
+  //   // background-image: url("../img/icon-feature-gift.svg");
+  //   fill: $color-primary;
+  // }
 }
 
 .advantages__slogan {
