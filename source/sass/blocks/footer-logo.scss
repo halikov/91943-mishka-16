@@ -1,0 +1,13 @@
+.footer-logo {
+  margin: 0;
+  padding: 19px 0 0;
+
+  &:hover .footer-logo__icon {
+    fill: #46c1ae;
+  }
+
+  &:active .footer-logo__icon {
+    fill: #46c1ae;
+    fill-opacity: 0.3;
+  }
+}
