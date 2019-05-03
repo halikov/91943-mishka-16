@@ -19,12 +19,17 @@
     padding-top: 5px;
   }
 
-  &:hover .copyright__icon-path {
-    fill: $color-primary-hovered;
+  &:hover .copyright__icon {
+    fill: #46c1ae;
   }
 
   &:active {
     opacity: 0.3;
+
+    & .copyright__icon {
+      fill: #46c1ae;
+      fill-opacity: 0.3;
+    }
   }
 }
 
@@ -45,8 +50,5 @@
   display: block;
   width: 30px;
   height: 35px;
-}
-
-.copyright__icon-path {
   fill: $color-primary;
 }

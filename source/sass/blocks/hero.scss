@@ -36,7 +36,7 @@
     @media (min-width: $width-large) {
       height: 745px;
       background-image: url("../img/hero-desktop@1x.jpg");
-      background-size: cover;
+      background-size: 1150px auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
@@ -183,6 +183,14 @@
       background-color: $color-complementary-hovered;
     }
   }
+
+  &:hover .hero__link-icon {
+    fill-opacity: 0.7;
+  }
+
+  &:active .hero__link-icon {
+    fill-opacity: 0.3;
+  }
 }
 
 .hero__link-text {
@@ -209,19 +217,17 @@
   display: block;
 
   @include reset;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: #149080;
+  fill-opacity: 0.5;
 
   &--interior {
     width: 42px;
     height: 65px;
-    background-image: url("../img/icon-interior.svg");
   }
 
   &--toy {
     width: 60px;
     height: 60px;
-    background-image: url("../img/icon-toy.svg");
   }
 }
 
