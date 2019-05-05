@@ -86,15 +86,14 @@
 
   &:hover .main-nav__link[href] {
     opacity: 0.6;
-    // color: $color-black-60;
 
     & .main-nav__link-icon {
       fill: $color-primary;
+      fill-opacity: 1;
     }
   }
 
   &:active .main-nav__link[href] {
-    // color: $color-black-30;
     opacity: 0.3;
 
     & .main-nav__link-icon {
@@ -201,10 +200,6 @@
     text-align: center;
   }
 
-  // &--iconed {
-  //   padding-left: 0;
-  // }
-
   @media (min-width: $width-medium) {
     width: auto;
     margin: 0;
@@ -245,10 +240,6 @@
       text-align: center;
     }
 
-    // &--basket {
-    //   // padding-top: 19px;
-    // }
-
     &--order {
       text-align: right;
     }
@@ -274,6 +265,8 @@
   position: absolute;
   top: 32px;
   left: 32px;
+  fill: $color-black;
+  fill-opacity: 0.2;
 
   @media (min-width: $width-medium) {
     left: 50%;
