@@ -135,8 +135,8 @@
 
 .popular__description {
   width: auto;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
 
   @media (min-width: $width-medium) {
     margin-bottom: 20px;
@@ -158,7 +158,6 @@
   border-spacing: 0;
 
   @media (min-width: $width-medium) {
-    // width: 50%;
     margin-bottom: 54px;
   }
 
@@ -216,7 +215,6 @@
   text-align: center;
 
   @media (min-width: $width-medium) {
-    // width: 50%;
     text-align: left;
   }
 

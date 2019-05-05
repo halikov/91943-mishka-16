@@ -190,8 +190,7 @@
   }
 
   @media (min-width: $width-large) {
-    margin: 0;
-    padding: 0;
+    @include reset;
   }
 }
 

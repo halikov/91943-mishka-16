@@ -1,5 +1,4 @@
 .page-header {
-  // z-index: 2;
   display: flex;
   flex-direction: column;
   width: auto;
@@ -8,8 +7,6 @@
   background-color: transparent;
 
   @media (min-width: $width-medium) {
-    // height: 160px;
-
     .page-header__nav {
       width: 668px;
       margin: 0 auto;
