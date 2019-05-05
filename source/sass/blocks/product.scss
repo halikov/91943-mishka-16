@@ -47,8 +47,8 @@
 
   @media (min-width: $width-large) {
     width: 100%;
-    margin: 0;
-    padding: 0;
+
+    @include reset;
   }
 
   & img {

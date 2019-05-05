@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 350px auto;
+
+    @media (min-resolution: $retina-ppi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $width-large) {

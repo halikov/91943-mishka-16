@@ -104,10 +104,6 @@
   @media (min-width: $width-large) {
     width: auto;
     margin-left: 175px;
-
-    // & tbody {
-    //   flex-direction: column;
-    // }
   }
 }
 
@@ -167,7 +163,6 @@
 
   @include reset;
   margin-top: 40px;
-  // margin-bottom: 35px;
   text-align: center;
 
   @media (min-width: $width-medium) {
@@ -219,8 +214,8 @@
   @media (min-width: $width-large) {
     width: 525px;
     height: 457px;
-    margin: 0;
-    padding: 0;
+
+    @include reset;
   }
 }
 
