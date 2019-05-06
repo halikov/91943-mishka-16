@@ -16,13 +16,11 @@
   margin: 0 auto;
 
   @media (min-width: $width-medium) {
-    margin: 0;
-    padding: 0;
+    @include reset;
   }
 
   @media (min-width: $width-large) {
-    margin: 0;
-    padding: 0;
+    @include reset;
   }
 }
 
@@ -54,8 +52,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    height: 660px;
     margin-left: -50px;
+    margin-top: -30px;
   }
 }
 
@@ -74,6 +72,7 @@
     width: 316px;
     margin: 0;
     margin-left: 50px;
+    margin-top: 30px;
     padding: 0;
   }
 }
