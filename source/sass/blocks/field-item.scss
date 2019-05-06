@@ -308,22 +308,20 @@
 
 .field-item__require-text {
   @include reset;
-  margin: 0 30px;
-  margin-top: 15px;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
 
   @media (min-width: $width-medium) {
     position: absolute;
     bottom: 14px;
-    right: 50px;
+    right: 0;
     margin: 0;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $width-large) {
-    bottom: 12px;
-    right: 225px;
+    bottom: 14px;
   }
 }

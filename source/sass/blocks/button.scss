@@ -122,13 +122,8 @@
     @media (min-width: $width-medium) {
       width: 230px;
       margin-top: 53px;
-      margin-left: 50px;
+      margin-left: 0;
       padding: 9px 25px;
-    }
-
-    @media (min-width: $width-large) {
-      margin-top: 50px;
-      margin-left: 225px;
     }
   }
 }

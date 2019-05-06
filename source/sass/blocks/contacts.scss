@@ -160,14 +160,16 @@
 .contacts__map-wrapper {
   position: relative;
   width: 100%;
+  max-width: 320px;
   height: 460px;
 
-  @include reset;
-  margin-top: 40px;
+  padding: 0;
+  margin: 40px auto 0;
   text-align: center;
 
   @media (min-width: $width-medium) {
     width: 100%;
+    max-width: 768px;
     margin-top: 28px;
     margin-bottom: 52px;
   }
