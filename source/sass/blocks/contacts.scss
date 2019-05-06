@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $width-large) {
-    width: auto;
+    max-width: 300px;
     margin-left: 175px;
   }
 }
@@ -120,6 +120,7 @@
 
   @media (min-width: $width-large) {
     width: 100%;
+    max-width: 300px;
 
     &:last-child {
       margin-bottom: 0;
