@@ -14,9 +14,9 @@
     </div>
     <header class="page-header">
 
-      <nav class="main-nav main-nav--closed main-nav--no-js page-header__nav">
       <!-- модификаторы no-js для работоспособности меню при отключенном js,
            модификатр closed для открытия/закрытия меню -->
+      <nav class="main-nav main-nav--closed main-nav--no-js page-header__nav">
 
         <div class="main-nav__inner">
 
@@ -339,7 +339,8 @@
 
     </footer>
 
-    <section class="popup popup-order visually-hidden">
+    <!-- модификатор closed для popup открывает/закрывает всплывающее окно заказа -->
+    <section class="popup popup--closed popup-order">
       <div class="popup-order__inner">
         <h3 class="popup-order__title">Добавить в корзину</h3>
         <p class="popup-order__text">Выберите размер:</p>
@@ -375,7 +376,7 @@
       </div>
     </section>
 
-    <script src="js/main.min.js"></script>
+    <script src="js/main-nav.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body
 </html>

@@ -14,7 +14,8 @@
     }
 
     &--closed .main-nav__toggle {
-      background-image: url("../img/icon-menu-open.svg");
+      background-image: url("../img/sprite.svg#icon-menu-open");
+      background-size: 20px 14px;
     }
 
     &--no-js .main-nav__item {
@@ -47,9 +48,10 @@
 
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("../img/sprite.svg#icon-menu-close");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 21px 21px;
 
   @media (min-width: $width-medium) {
     display: none;

@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 99;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -9,4 +10,8 @@
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.9);
+
+  &--closed {
+    display: none;
+  }
 }
