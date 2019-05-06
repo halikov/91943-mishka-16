@@ -29,6 +29,7 @@ gulp.task("copy", function() {
       "source/img/logo-*.svg",
       "source/img/icon-menu-*.svg",
       "source/img/*-arrow.svg",
+      "source/img/icon-flag.svg",
       "source/*.ico"
     ], {
       base: "source"
