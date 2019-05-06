@@ -27,6 +27,8 @@ gulp.task("copy", function() {
       "source/img/**/*.{jpg,png,webp}",
       "source/img/**/bg-*.svg",
       "source/img/logo-*.svg",
+      "source/img/icon-menu-*.svg",
+      "source/img/*-arrow.svg",
       "source/*.ico"
     ], {
       base: "source"
@@ -64,7 +66,7 @@ gulp.task("imagemin", function() {
         ]
       })
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
