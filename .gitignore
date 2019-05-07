@@ -9,4 +9,5 @@
 node_modules/
 npm-debug.*
 build/
+maps/
 Thumbs.db

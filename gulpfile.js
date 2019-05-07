@@ -30,7 +30,7 @@ gulp.task("copy", function() {
       "source/img/icon-menu-*.svg",
       "source/img/*-arrow.svg",
       "source/img/icon-flag.svg",
-      "source/*.ico"
+      "source/*.ico",
     ], {
       base: "source"
     })
@@ -46,7 +46,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(rename("style.css"))
-    .pipe(sourcemap.write("."))
+    .pipe(sourcemap.write("../../maps"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
@@ -55,7 +55,7 @@ gulp.task("cssmin", function () {
   return gulp.src("build/css/style.css")
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("imagemin", function() {
@@ -78,9 +78,9 @@ gulp.task("imagemin", function() {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({
-      quality: 90
-    }))
+    .pipe(webp(
+      {quality: 90}
+      ))
     .pipe(gulp.dest("build/img"));
 });
 
