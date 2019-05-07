@@ -126,52 +126,9 @@
   top: 0;
   content: "";
   display: block;
-  // width: 60px;
-  // height: 40px;
 
   @include reset;
   fill: $color-primary;
-  // margin-bottom: 14px;
-  // background-repeat: no-repeat;
-  // background-position: 0;
-
-  // @media (min-width: $width-medium) {
-  //   // margin-bottom: 13px;
-  // }
-
-  // @media (min-width: $width-large) {
-  //   margin-bottom: 0;
-  // }
-
-  // &--flower {
-  //   // background-image: url("../img/icon-feature-flower.svg");
-  //   fill: $color-primary;
-  // }
-
-  // &--money {
-  //   // background-image: url("../img/icon-feature-money.svg");
-  //   fill: $color-primary;
-  // }
-
-  // &--heart {
-  //   // background-image: url("../img/icon-feature-heart.svg");
-  //   fill: $color-primary;
-  // }
-
-  // &--ball {
-  //   // background-image: url("../img/icon-feature-ball.svg");
-  //   fill: $color-primary;
-  // }
-
-  // &--rocket {
-  //   // background-image: url("../img/icon-feature-rocket.svg");
-  //   fill: $color-primary;
-  // }
-
-  // &--gift {
-  //   // background-image: url("../img/icon-feature-gift.svg");
-  //   fill: $color-primary;
-  // }
 }
 
 .advantages__slogan {

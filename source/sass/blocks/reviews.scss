@@ -9,6 +9,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $width-large) {
@@ -130,13 +135,6 @@
   line-height: 30px;
   font-weight: 400;
   color: $color-basic;
-
-  // @media (min-width: $width-medium) {
-  // }
-
-  // @media (min-width: $width-large) {
-  //   font-size: 17px
-  // }
 }
 
 .reviews__toggles {

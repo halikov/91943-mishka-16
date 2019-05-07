@@ -15,6 +15,7 @@
 
     &--closed .main-nav__toggle {
       background-image: url("../img/icon-menu-open.svg");
+      background-size: 20px 14px;
     }
 
     &--no-js .main-nav__item {
@@ -50,6 +51,7 @@
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 21px 21px;
 
   @media (min-width: $width-medium) {
     display: none;
@@ -86,15 +88,14 @@
 
   &:hover .main-nav__link[href] {
     opacity: 0.6;
-    // color: $color-black-60;
 
     & .main-nav__link-icon {
       fill: $color-primary;
+      fill-opacity: 1;
     }
   }
 
   &:active .main-nav__link[href] {
-    // color: $color-black-30;
     opacity: 0.3;
 
     & .main-nav__link-icon {
@@ -186,7 +187,6 @@
   position: relative;
   display: block;
 
-  // @include positioner-small;
   padding: 27px 0;
   padding-left: 76px;
   font-size: 17px;
@@ -200,10 +200,6 @@
     padding: 22px 0 16px;
     text-align: center;
   }
-
-  // &--iconed {
-  //   padding-left: 0;
-  // }
 
   @media (min-width: $width-medium) {
     width: auto;
@@ -245,10 +241,6 @@
       text-align: center;
     }
 
-    // &--basket {
-    //   // padding-top: 19px;
-    // }
-
     &--order {
       text-align: right;
     }
@@ -274,6 +266,8 @@
   position: absolute;
   top: 32px;
   left: 32px;
+  fill: $color-black;
+  fill-opacity: 0.2;
 
   @media (min-width: $width-medium) {
     left: 50%;

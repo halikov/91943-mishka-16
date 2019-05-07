@@ -102,12 +102,8 @@
   }
 
   @media (min-width: $width-large) {
-    width: auto;
+    max-width: 300px;
     margin-left: 175px;
-
-    // & tbody {
-    //   flex-direction: column;
-    // }
   }
 }
 
@@ -124,6 +120,7 @@
 
   @media (min-width: $width-large) {
     width: 100%;
+    max-width: 300px;
 
     &:last-child {
       margin-bottom: 0;
@@ -163,15 +160,16 @@
 .contacts__map-wrapper {
   position: relative;
   width: 100%;
+  max-width: 320px;
   height: 460px;
 
-  @include reset;
-  margin-top: 40px;
-  // margin-bottom: 35px;
+  padding: 0;
+  margin: 40px auto 0;
   text-align: center;
 
   @media (min-width: $width-medium) {
     width: 100%;
+    max-width: 768px;
     margin-top: 28px;
     margin-bottom: 52px;
   }
@@ -219,8 +217,8 @@
   @media (min-width: $width-large) {
     width: 525px;
     height: 457px;
-    margin: 0;
-    padding: 0;
+
+    @include reset;
   }
 }
 

@@ -2,3 +2,19 @@
   position: relative;
   width: 100%;
 }
+
+.filter-form__button-wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 15px;
+
+  @media (min-width: $width-medium) {
+    width: 668px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $width-large) {
+    width: 700px;
+  }
+}
