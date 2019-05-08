@@ -30,6 +30,7 @@ gulp.task("copy", function() {
       "source/img/**/bg-*.svg",
       "source/img/logo-*.svg",
       "source/img/icon-menu-*.svg",
+      "source/img/icon-tick.svg",
       "source/img/*-arrow.svg",
       "source/img/icon-flag.svg",
       "source/*.ico",
