@@ -124,7 +124,7 @@
 
                       <p class="product__price-tag">
                         <span class="product__price">1 200 руб.</span>
-                        <a class="product__basket-link" href="#" aria-label="добавить в корзину">
+                        <a class="product__basket-link order-button" href="#" aria-label="добавить в корзину">
                           <svg class="product__basket-icon" width="20.294" height="18.849">
                             <use xlink:href="#icon-cart"></use>
                           </svg>
@@ -158,7 +158,7 @@
 
                       <p class="product__price-tag">
                         <span class="product__price">690 руб.</span>
-                        <a class="product__basket-link" href="#" aria-label="добавить в корзину">
+                        <a class="product__basket-link order-button" href="#" aria-label="добавить в корзину">
                           <svg class="product__basket-icon" width="20.294" height="18.849">
                             <use xlink:href="#icon-cart"></use>
                           </svg>
@@ -192,7 +192,7 @@
 
                       <p class="product__price-tag">
                         <span class="product__price">1 500 руб.</span>
-                        <a class="product__basket-link" href="#" aria-label="добавить в корзину">
+                        <a class="product__basket-link order-button" href="#" aria-label="добавить в корзину">
                           <svg class="product__basket-icon" width="20.294" height="18.849">
                             <use xlink:href="#icon-cart"></use>
                           </svg>
@@ -217,10 +217,8 @@
           <div class="presentations__item">
             <div class="presentations__title">
               <span class="presentations__title-icon">
-                <svg class="presentations__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                  <g transform="translate(0 192)">
-                    <path class="presentations__icon-path" d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/>
-                  </g>
+                <svg class="presentations__icon" width="32px" height="32px" viewBox="0 0 32 32">
+                  <use xlink:href="#icon-video"></use>
                 </svg>
               </span>
               <h3 class="presentations__title-text">Процесс производства</h3>
@@ -240,7 +238,7 @@
               </a>
 
               <button class="video__button" type="button" aria-label="Запустить видео">
-                  <svg class="video__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
+                  <!-- <svg class="video__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
                     <g>
                       <g>
                         <path fill="#63D1BB" d="M344.255,400.708c0,0-0.92-7.008-3.785-10.078c-3.632-4.041-7.674-4.066-9.541-4.297 c-13.326-1.023-33.303-1.023-33.303-1.023h-0.051c0,0-19.978,0-33.304,1.023c-1.867,0.23-5.908,0.256-9.54,4.297 c-2.84,3.096-3.786,10.078-3.786,10.078s-0.896,8.211-0.896,16.422v7.699c0,8.21,0.947,16.421,0.947,16.421 s0.921,7.009,3.785,10.078c3.632,4.041,8.364,3.913,10.487,4.349c7.622,0.767,32.356,1.022,32.356,1.022 s20.003-0.025,33.329-1.048c1.867-0.23,5.908-0.256,9.54-4.298c2.84-3.069,3.786-10.078,3.786-10.078s0.946-8.21,0.946-16.421 v-7.699C345.202,408.919,344.255,400.708,344.255,400.708z"/>
@@ -250,11 +248,14 @@
                     <g>
                       <polygon fill="#FFFFFF" points="285.733,403.138 285.733,438.846 315.48,420.992 	"/>
                     </g>
+                  </svg> -->
+                  <svg class="video__icon" width="100.678" height="76.891" viewBox="0 0 100.678 76.891">
+                    <use xlink:href="#icon-play"></use>
                   </svg>
               </button>
             </div>
             <p class="presentations__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="button button--presentation" href="#">Сделать заказ</a>
+            <a class="button button--presentation order-button" href="#">Сделать заказ</a>
 
           </div>
         </div>
@@ -323,45 +324,46 @@
       </div>
     </footer>
 
-
     <!-- модификатор closed для popup открывает/закрывает всплывающее окно заказа -->
     <section class="popup popup--closed popup-order">
-      <div class="popup__inner">
+      <div class="popup-order__inner">
         <h3 class="popup-order__title">Добавить в корзину</h3>
         <p class="popup-order__text">Выберите размер:</p>
 
-        <p class="popup-order__list">
+        <div class="popup-order__list">
           <fieldset class="buttons-group">
+            <div class="buttons-group__wrapper">
 
-            <div class="button-field">
-              <label class="button-field__label" for="size-s">
-                <input class="button-field__input visually-hidden" id="size-s" type="radio" name="order-size"  checked>
-                <span class="button-field__text">S</span>
-              </label>
+              <div class="button-field">
+                <label class="button-field__label" for="size-s">
+                  <input class="button-field__input visually-hidden" id="size-s" type="radio" name="order-size"  checked>
+                  <span class="button-field__text">S</span>
+                </label>
+              </div>
+
+              <div class="button-field">
+                <label class="button-field__label" for="size-m">
+                  <input class="button-field__input visually-hidden" id="size-m" type="radio" name="order-size">
+                  <span class="button-field__text">M</span>
+                </label>
+              </div>
+
+              <div class="button-field">
+                <label class="button-field__label" for="size-l">
+                  <input class="button-field__input visually-hidden" id="size-l" type="radio" name="order-size">
+                  <span class="button-field__text">L</span>
+                </label>
+              </div>
+
             </div>
-
-            <div class="button-field">
-              <label class="button-field__label" for="size-m">
-                <input class="button-field__input visually-hidden" id="size-m" type="radio" name="order-size"  checked>
-                <span class="button-field__text">M</span>
-              </label>
-            </div>
-
-            <div class="button-field">
-              <label class="button-field__label" for="size-l">
-                <input class="button-field__input visually-hidden" id="size-l" type="radio" name="order-size"  checked>
-                <span class="button-field__text">L</span>
-              </label>
-            </div>
-
           </fieldset>
-        </p>
+        </div>
 
-        <button class="button button--popup" type="button">Добавить</button>
+        <button class="button button--popup close" type="button">Добавить</button>
       </div>
     </section>
 
     <script src="js/main.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/plugins/picturefill.min.js"></script>
   </body>
 </html>

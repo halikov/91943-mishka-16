@@ -13,3 +13,9 @@
   @include reset;
   border: none;
 }
+
+.buttons-group__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
