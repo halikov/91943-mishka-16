@@ -149,15 +149,12 @@
   z-index: 2;
   content: "";
   display: block;
-  // background-repeat: no-repeat;
-  // background-position: 0 0;
   fill: $color-basic-30;
 
   &--tel {
     right: 7px;
     width: 25px;
     height: 24px;
-    // background-image: url("../img/icon-phone.svg");
 
     @media (min-width: $width-medium) {
       top: 16px;
@@ -173,7 +170,6 @@
     right: 5px;
     width: 32px;
     height: 28px;
-    // background-image: url("../img/icon-mail.svg");
 
     @media (min-width: $width-medium) {
       top: 15px;
@@ -191,7 +187,9 @@
   border: none;
   background-color: transparent;
 
-  &[type="text"] {
+  &[type="text"],
+  &[type="tel"],
+  &[type="email"] {
     padding: 16px 0 16px;
     padding-right: 45px;
     font-size: 17px;
