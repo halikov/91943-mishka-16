@@ -5,6 +5,10 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 
   </head>
@@ -20,7 +24,8 @@
 
         <div class="main-nav__inner">
 
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          </button>
           <ul class="main-nav__list">
 
             <li class="main-nav__item main-nav__item--logo">
@@ -147,7 +152,7 @@
 
               <p class="popular__price-tag">
                 <span class="popular__price">Цена: 990 руб.</span>
-                <a class="button button--order-m" href="#">Заказать</a>
+                <a class="button button--order-m order-button" href="#">Заказать</a>
               </p>
 
             </div>
@@ -264,6 +269,7 @@
                 <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
                 <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="наш адрес на карте города">
               </picture>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858715814953!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557504699040!5m2!1sru!2sru" width="100%" height="457px" allowfullscreen></iframe>
               <svg class="contacts__map-pin" width="67" height="100" viewBox="0 0 67 100">
                 <use xlink:href="#icon-map-pin"></use>
               </svg>
@@ -349,36 +355,38 @@
 
         <div class="popup-order__list">
           <fieldset class="buttons-group">
+            <div class="buttons-group__wrapper">
 
-            <div class="button-field">
-              <label class="button-field__label" for="size-s">
-                <input class="button-field__input visually-hidden" id="size-s" type="radio" name="order-size"  checked>
-                <span class="button-field__text">S</span>
-              </label>
+              <div class="button-field">
+                <label class="button-field__label" for="size-s">
+                  <input class="button-field__input visually-hidden" id="size-s" type="radio" name="order-size"  checked>
+                  <span class="button-field__text">S</span>
+                </label>
+              </div>
+
+              <div class="button-field">
+                <label class="button-field__label" for="size-m">
+                  <input class="button-field__input visually-hidden" id="size-m" type="radio" name="order-size">
+                  <span class="button-field__text">M</span>
+                </label>
+              </div>
+
+              <div class="button-field">
+                <label class="button-field__label" for="size-l">
+                  <input class="button-field__input visually-hidden" id="size-l" type="radio" name="order-size">
+                  <span class="button-field__text">L</span>
+                </label>
+              </div>
+
             </div>
-
-            <div class="button-field">
-              <label class="button-field__label" for="size-m">
-                <input class="button-field__input visually-hidden" id="size-m" type="radio" name="order-size">
-                <span class="button-field__text">M</span>
-              </label>
-            </div>
-
-            <div class="button-field">
-              <label class="button-field__label" for="size-l">
-                <input class="button-field__input visually-hidden" id="size-l" type="radio" name="order-size">
-                <span class="button-field__text">L</span>
-              </label>
-            </div>
-
           </fieldset>
         </div>
 
-        <button class="button button--popup" type="button">Добавить</button>
+        <button class="button button--popup close" type="button">Добавить</button>
       </div>
     </section>
 
-    <script src="js/main-nav.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/plugins/picturefill.min.js"></script>
   </body
 </html>

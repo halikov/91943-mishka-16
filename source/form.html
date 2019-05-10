@@ -5,6 +5,10 @@
     <title>HTML Academy: Мишка - Вязание на заказ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 
   </head>
@@ -218,7 +222,7 @@
                         <span class="field-group__title field-group__title--usermail">Тел</span>
                         <label class="field-item__block field-item__block--usermail" for="user-tel">
                           <div class="field-item__input-wrapper">
-                            <input class="field-item__input" id="user-tel" type="text" placeholder="+7 XXX XXX XX XX*">
+                            <input class="field-item__input" id="user-tel" type="tel" placeholder="+7 XXX XXX XX XX*">
                             <svg class="field-item__icon field-item__icon--tel" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333">
                               <use xlink:href="#icon-phone"></use>
                             </svg>
@@ -230,7 +234,7 @@
                         <span class="field-group__title field-group__title--usermail">E-Mail</span>
                         <label class="field-item__block field-item__block--usermail" for="email">
                           <div class="field-item__input-wrapper">
-                            <input class="field-item__input" id="email" type="text" placeholder="Ваш Email*">
+                            <input class="field-item__input" id="email" type="email" placeholder="Ваш Email*">
                             <svg class="field-item__icon field-item__icon--env" width="32" height="32" viewBox="0 0 32 32">
                               <use xlink:href="#icon-mail"></use>
                             </svg>
@@ -323,7 +327,7 @@
       </div>
     </footer>
 
-    <script src="js/main-nav.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/plugins/picturefill.min.js"></script>
   </body>
 </html>
