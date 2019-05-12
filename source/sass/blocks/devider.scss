@@ -2,7 +2,9 @@
   content: "";
   display: block;
   width: 100%;
+  max-width: 320px;
   height: 10px;
+  margin: 0 auto;
   background-image: url("../img/bg-zigzag-line-min.svg");
   background-repeat: repeat-x;
   background-position: 0 0;
@@ -18,7 +20,9 @@
 
   @media (min-width: $width-medium) {
     display: block;
+    max-width: 768px;
     height: 28px;
+    margin: 0 auto;
     background-size: auto 15px;
 
     &--popular {

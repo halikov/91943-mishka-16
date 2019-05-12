@@ -160,7 +160,6 @@
 .contacts__map-wrapper {
   position: relative;
   width: 100%;
-  max-width: 320px;
   height: 460px;
 
   padding: 0;
@@ -169,7 +168,7 @@
 
   @media (min-width: $width-medium) {
     width: 100%;
-    max-width: 768px;
+    // max-width: 768px;
     margin-top: 28px;
     margin-bottom: 52px;
   }
@@ -235,16 +234,18 @@
 
 .contacts__map-pin {
   position: absolute;
-  top: 140px;
-  left: 125px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -95%);
 
   @media (min-width: $width-medium) {
-    top: 135px;
-    left: 350px;
+    top: 50%;
+    left: 50%;
   }
 
   @media (min-width: $width-large) {
     top: 140px;
     left: 230px;
+    transform: translate(0);
   }
 }

@@ -1,4 +1,5 @@
 .field-group {
+  position: relative;
   width: 100%;
 
   @include reset;
@@ -90,12 +91,12 @@
   @media (min-width: $width-medium) {
     position: absolute;
     top: 18px;
-    left: 0;
+    left: 55px;
     width: 20%;
   }
 
   @media (min-width: $width-large) {
-    left: 64px;
+    left: 114px;
   }
 
   &--username {

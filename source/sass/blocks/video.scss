@@ -1,6 +1,12 @@
 .video {
   position: relative;
   display: block;
+
+  @media (min-width: $width-large) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .video__link {
