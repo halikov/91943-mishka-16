@@ -66,7 +66,8 @@
     }
   }
 
-  &:hover .field-item__checker {
+  &:hover .field-item__checker,
+  &:focus .field-item__checker {
     border-color: $color-primary-hovered;
   }
 
@@ -187,6 +188,10 @@
   @include width-full;
   border: none;
   background-color: transparent;
+
+  &:focus ~ span {
+    outline: thin dotted $color-black;
+  }
 
   &[type="text"],
   &[type="tel"],
