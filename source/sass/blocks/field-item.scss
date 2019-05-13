@@ -189,10 +189,6 @@
   border: none;
   background-color: transparent;
 
-  &:focus ~ span {
-    outline: thin dotted $color-black;
-  }
-
   &[type="text"],
   &[type="tel"],
   &[type="email"] {
@@ -231,6 +227,12 @@
     width: auto;
     flex-grow: 1;
     padding-left: 20px;
+  }
+
+  @media (min-width: $width-large) {
+    &:focus ~ span {
+      outline: thin dotted $color-black;
+    }
   }
 
   &:checked + .field-item__checker--radio::after {
