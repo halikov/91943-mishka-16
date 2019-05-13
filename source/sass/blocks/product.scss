@@ -69,6 +69,14 @@
     width: 100%;
     min-height: 197px;
     margin: 0;
+
+    &:hover {
+      box-shadow: 0 5px 10px 0 $color-bloack-10;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 $color-black-10;
+    }
   }
 }
 
