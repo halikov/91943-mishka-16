@@ -91,30 +91,17 @@
   @media (min-width: $width-medium) {
     position: absolute;
     top: 18px;
-    left: 55px;
+    left: 0;
     width: 20%;
+
+    &--usermail,
+    &--phone {
+      top: 40px;
+    }
   }
 
   @media (min-width: $width-large) {
-    left: 114px;
-  }
-
-  &--username {
-    @media (min-width: $width-medium) {
-      top: 21px;
-    }
-  }
-
-  &--usermail {
-    @media (min-width: $width-medium) {
-      top: 21px;
-      left: -164px;
-    }
-
-    @media (min-width: $width-large) {
-      left: -114px;
-      padding-bottom: 50px;
-    }
+    left: 0;
   }
 
   &::after {

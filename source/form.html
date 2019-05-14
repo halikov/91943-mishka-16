@@ -102,8 +102,9 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
 
               <fieldset class="field-group field-group--radio">
-                  <legend class="field-group__title">Тип</legend>
+                  <legend class="visually-hidden">Тип</legend>
                 <div class="field-group__inner">
+                  <span class="field-group__title">Тип</span>
 
                   <div class="field-container">
                     <div class="field-item">
@@ -127,8 +128,9 @@
               </fieldset>
 
               <fieldset class="field-group field-group--checkbox">
-                  <legend class="field-group__title">Цвет</legend>
+                  <legend class="visually-hidden">Цвет</legend>
                 <div class="field-group__inner field-group__inner--checkbox">
+                  <span class="field-group__title">Цвет</span>
 
                   <div class="field-container field-container--checkbox">
                     <div class="field-item field-item--checkbox">
@@ -184,8 +186,9 @@
               </fieldset>
 
               <fieldset class="field-group field-group--username">
-                <legend class="field-group__title field-group__title--username">ФИО</legend>
+                <legend class="visually-hidden">ФИО</legend>
                 <div class="field-group__inner">
+                  <span class="field-group__title field-group__title--username">ФИО</span>
 
                   <div class="field-container">
                     <div class="field-item field-item--username">
@@ -217,28 +220,28 @@
                 <legend class="visually-hidden">Позвонить или написать нам</legend>
                 <div class="field-group__inner">
 
-                  <div class="field-container field-container--usermail">
+                  <div class="field-container field-container--phone">
+                    <span class="field-group__title field-group__title--phone">Тел</span>
                       <div class="field-item field-item--usermail">
-                        <span class="field-group__title field-group__title--usermail">Тел</span>
-                        <label class="field-item__block field-item__block--usermail" for="user-tel">
-                          <!-- <div class="field-item__input-wrapper"> -->
+                        <label class="field-item__block field-item__block--phone" for="user-tel">
                             <input class="field-item__input" id="user-tel" type="tel" placeholder="+7 XXX XXX XX XX*">
                             <svg class="field-item__icon field-item__icon--tel" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333">
                               <use xlink:href="#icon-phone"></use>
                             </svg>
-                          <!-- </div> -->
                         </label>
                       </div>
+                  </div>
+                </div>
+                <div class="field-group__inner">
 
+                  <div class="field-container field-container--usermail">
+                    <span class="field-group__title field-group__title--usermail">E-Mail</span>
                       <div class="field-item field-item--usermail">
-                        <span class="field-group__title field-group__title--usermail">E-Mail</span>
                         <label class="field-item__block field-item__block--usermail" for="email">
-                          <!-- <div class="field-item__input-wrapper"> -->
                             <input class="field-item__input" id="email" type="email" placeholder="Ваш Email*">
                             <svg class="field-item__icon field-item__icon--env" width="32" height="32" viewBox="0 0 32 32">
                               <use xlink:href="#icon-mail"></use>
                             </svg>
-                          <!-- </div> -->
                         </label>
                       </div>
                   </div>
