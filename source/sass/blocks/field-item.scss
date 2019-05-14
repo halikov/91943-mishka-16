@@ -66,7 +66,8 @@
     }
   }
 
-  &:hover .field-item__checker {
+  &:hover .field-item__checker,
+  &:focus .field-item__checker {
     border-color: $color-primary-hovered;
   }
 
@@ -89,6 +90,7 @@
 }
 
 .field-item__block {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -225,6 +227,12 @@
     width: auto;
     flex-grow: 1;
     padding-left: 20px;
+  }
+
+  @media (min-width: $width-large) {
+    &:focus ~ span {
+      outline: thin dotted $color-black;
+    }
   }
 
   &:checked + .field-item__checker--radio::after {
