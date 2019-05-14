@@ -5,21 +5,10 @@
   @media (min-width: $width-medium) {
     position: relative;
     margin-top: 84px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 350px auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 350px auto;
-    }
   }
 
   @media (min-width: $width-large) {
     margin-top: 91px;
-    padding-top: 70px;
-    background-position: 50px 0;
   }
 }
 
@@ -29,13 +18,28 @@
   @include positioner-small;
 
   @media (min-width: $width-medium) {
-    @include positioner-medium;
-    padding-top: 77px;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 75px 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $width-large) {
     @include positioner-large;
-    padding-top: 0;
+    max-width: 1050px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-left: 175px;
   }
 }
 
@@ -56,7 +60,6 @@
   }
 
   @media (min-width: $width-large) {
-    margin-left: 175px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -76,7 +79,6 @@
 
   @media (min-width: $width-large) {
     width: 875px;
-    margin-left: 175px;
   }
 }
 
@@ -149,8 +151,8 @@
 
   @media (min-width: $width-medium) {
     position: absolute;
-    bottom: -36px;
-    right: 5px;
+    bottom: 38px;
+    right: 53px;
     width: 167px;
     border: none;
 
@@ -161,6 +163,7 @@
 
   @media (min-width: $width-large) {
     right: 0;
+    bottom: 63px;
     width: 175px;
   }
 

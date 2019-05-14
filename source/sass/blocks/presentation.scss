@@ -41,6 +41,14 @@
     margin: 0 auto;
     padding: 0;
     padding-bottom: 11px;
+
+    &:hover {
+      box-shadow: 0 5px 10px 0 $color-black-10;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 $color-black-10;
+    }
   }
 
   @media (min-width: $width-large) {

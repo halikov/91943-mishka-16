@@ -59,12 +59,13 @@
     @media (min-width: $width-medium) {
       position: absolute;
       top: 79px;
-      right: 0;
+      right: 50px;
       width: 175px;
     }
 
     @media (min-width: $width-large) {
-      top: 9px;
+      top: 79px;
+      right: 0;
       width: 175px;
     }
   }
